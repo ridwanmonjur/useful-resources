@@ -1,0 +1,2976 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8 -->
+<html lang="en" class="js-focus-visible" data-js-focus-visible=""><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>How to create responsive typography using CSS — Three different methods explained - DEV Community</title>
+      <meta name="last-updated" content="2023-03-29 01:10:12 UTC">
+      <meta name="user-signed-in" content="false">
+      <meta name="head-cached-at" content="1680052212">
+        <!-- Experimental web monetization payment pointer for micropayments -->
+        <!-- It lets readers make micropayments to websites they visit. -->
+        <!-- This is step 1: Get live in production to test for platform-wide payment pointer. -->
+        <!-- Step 2: Allow authors to set their payment pointer so they can directly monetize their content based on visitors. -->
+        <!-- Step 3: Enable further functionality based on what we learn from this experimentation and how the ecosystem evolves. -->
+        <meta name="monetization" content="$ilp.uphold.com/24HhrUGG7ekn">
+      <meta name="environment" content="production">
+      <link rel="stylesheet" href="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/minimal-2c667aea90bcfdf7cbbaa64adb374d442dedce4719e29eb54ecdb44c3513e4f2.css" media="all" id="main-minimal-stylesheet">
+<link rel="stylesheet" href="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/views-20855f5bad436e1aff9a31d715784a782a2b3ad604e175c21da202e54b80f663.css" media="all" id="main-views-stylesheet">
+<link rel="stylesheet" href="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/crayons-c3fc53b3b8180e47c2d711b1b897c01f424c015290ed93770e6ccf89a6e17a2d.css" media="all" id="main-crayons-stylesheet">
+
+      <script async="" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/analytics.js"></script><script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/base-c1ff40027d8fc2fcb91d95319defb6df10e2eec8de08698d40713c53182f1ef0.js" defer="defer"></script>
+        <script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_base-e11fce2e1dc7beb0cfc4.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/base-b8d6c8867b1902d73cf2.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_baseInitializers-08dd6ba5ff75a8bea931.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/baseInitializers-4099bb8f2580432ef645.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_Search-3c98aa919ddb2a01ac91.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/0-6bf46cb11ef27e3ebc1f.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/1-0a11659385a997393010.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/Search-14604350c994dbee08eb.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_runtimeBanner-3a23a84f5899af0b0d8a.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtimeBanner-3a0f3e4b6731a2ce6db0.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_baseTracking-e39d2ab6efa8fc2985a7.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/baseTracking-8c7c2d15a5cbc4917b53.chunk.js" defer="defer"></script>
+      
+    <link rel="canonical" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8">
+    <meta name="description" content="Good typography is one of the key elements of a website. Let&#39;s take a look at three different methods... Tagged with css, html, tutorial, webdev.">
+    <meta name="keywords" content="css, html, tutorial, webdev, software, coding, development, engineering, inclusive, community">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8">
+    <meta property="og:title" content="How to create responsive typography using CSS — Three different methods explained">
+    <meta property="og:description" content="Good typography is one of the key elements of a website. Let&#39;s take a look at three different methods...">
+    <meta property="og:site_name" content="DEV Community">
+    <meta name="twitter:site" content="@thepracticaldev">
+    <meta name="twitter:creator" content="@laurilllll">
+    <meta name="twitter:title" content="How to create responsive typography using CSS — Three different methods explained">
+    <meta name="twitter:description" content="Good typography is one of the key elements of a website. Let&#39;s take a look at three different methods...">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:widgets:new-embed-design" content="on">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+      <meta property="og:image" content="https://dev.to/social_previews/article/572671.png">
+      <meta name="twitter:image:src" content="https://dev.to/social_previews/article/572671.png">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico">
+      <link rel="apple-touch-icon" href="https://res.cloudinary.com/practicaldev/image/fetch/s--gDM0_LTS--/c_limit,f_png,fl_progressive,q_80,w_180/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="https://res.cloudinary.com/practicaldev/image/fetch/s--l0c3Kmql--/c_limit,f_png,fl_progressive,q_80,w_152/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/practicaldev/image/fetch/s--gDM0_LTS--/c_limit,f_png,fl_progressive,q_80,w_180/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="https://res.cloudinary.com/practicaldev/image/fetch/s--2ecYCSjC--/c_limit,f_png,fl_progressive,q_80,w_167/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png">
+      <link href="https://res.cloudinary.com/practicaldev/image/fetch/s--t7tVouP9--/c_limit,f_png,fl_progressive,q_80,w_192/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png" rel="icon" sizes="192x192">
+      <link href="https://res.cloudinary.com/practicaldev/image/fetch/s--lrmEcD2H--/c_limit,f_png,fl_progressive,q_80,w_128/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png" rel="icon" sizes="128x128">
+      <meta name="apple-mobile-web-app-title" content="dev.to">
+      <meta name="application-name" content="dev.to">
+      <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+      <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+      <link rel="search" href="https://dev.to/open-search.xml" type="application/opensearchdescription+xml" title="DEV Community">
+
+      <meta property="forem:name" content="DEV Community">
+      <meta property="forem:logo" content="https://res.cloudinary.com/practicaldev/image/fetch/s--PFPhV65b--/c_limit,f_png,fl_progressive,q_80,w_512/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png">
+      <meta property="forem:domain" content="dev.to">
+  <script charset="utf-8" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/158-e4ac1a12b4329d7a1e41.chunk.js"></script><script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/js" async=""></script><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="SEGoGj6KNKRQCFqniR_TIgtp2zgK67j7vvKH7G_6scMXrTkA1IQ9qAyHVQ33k5YQVne8-BFBBClnFmVSJmslig"><script charset="utf-8" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/152-30e90e6b703be56def96.chunk.js"></script></head>
+      <body class="sans-serif-article-body default-header" data-user-status="logged-out" data-community-name="DEV Community" data-locale="en" data-honeybadger-key="a45862f6" data-deployed-at="2023-03-28T19:19:38Z" data-latest-commit-id="e4e1f4d96d5abc8a4ab15069d4b2709b10de9522" data-ga-tracking="UA-71991109-1" data-ga4-tracking-id="G-TYEM8Y3JN3" data-runtime="Browser-Linux" data-loaded="true" cz-shortcut-listen="true">
+        <link rel="stylesheet" href="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/minimal-2c667aea90bcfdf7cbbaa64adb374d442dedce4719e29eb54ecdb44c3513e4f2.css" media="all" id="secondary-minimal-stylesheet">
+<link rel="stylesheet" href="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/views-20855f5bad436e1aff9a31d715784a782a2b3ad604e175c21da202e54b80f663.css" media="all" id="secondary-views-stylesheet">
+<link rel="stylesheet" href="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/crayons-c3fc53b3b8180e47c2d711b1b897c01f424c015290ed93770e6ccf89a6e17a2d.css" media="all" id="secondary-crayons-stylesheet">
+
+        <div id="body-styles">
+          <style>
+            :root {
+              --accent-brand-lighter-rgb: 80, 99, 301;
+              --accent-brand-rgb: 59, 73, 223;
+              --accent-brand-darker-rgb: 47, 58, 178;
+            }
+          </style>
+        </div>
+        <div id="audiocontent" data-podcast="">
+          
+        </div>
+        <div class="navigation-progress" id="navigation-progress"></div>
+<header class="crayons-header print-hidden">
+  <span id="route-change-target" tabindex="-1"></span>
+  <a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#main-content" class="skip-content-link">Skip to content</a>
+  <div class="crayons-header__container">
+    <span class="inline-block m:hidden ">
+      <button class="c-btn c-btn--icon-alone js-hamburger-trigger mx-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a870nus21w25yeiwnvih0grx4fciiza3" class="crayons-icon"><title id="a870nus21w25yeiwnvih0grx4fciiza3">Navigation menu</title>
+    <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+</svg>
+
+      </button>
+    </span>
+    <a href="https://dev.to/" class="site-logo" aria-label="DEV Community Home">
+    <img class="site-logo__img" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="DEV Community">
+</a>
+
+
+    <div class="crayons-header--search js-search-form" id="header-search"><form method="get" action="https://dev.to/search" role="search" accept-charset="UTF-8"><input name="utf8" type="hidden" value="✓"><div class="crayons-fields crayons-fields--horizontal"><div class="crayons-field flex-1 relative"><input class="crayons-header--search-input crayons-textfield" type="text" id="" name="q" placeholder="Search..." autocomplete="off" aria-label="Search term"><button type="submit" aria-label="Search" class="c-btn c-btn--icon-alone absolute inset-px left-auto mt-0 py-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="crayons-icon c-btn__icon" focusable="false"><path d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path></svg></button></div></div></form>
+      
+    </div>
+
+    <div class="flex items-center h-100 ml-auto">
+      <a class="c-link c-link--icon-alone c-link--block m:hidden mx-1" id="search-link" aria-label="Search" href="https://dev.to/search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="acp1mwzi331tljzso6buvjt7r5u0pxn7" class="crayons-icon"><title id="acp1mwzi331tljzso6buvjt7r5u0pxn7">Search</title>
+    <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"></path>
+</svg>
+
+      </a>
+        <div class="flex" id="authentication-top-nav-actions">
+          <span class="hidden m:block">
+            <a href="https://dev.to/enter" class="c-link c-link--block mr-2 whitespace-nowrap ml-auto" data-no-instant="">
+              Log in
+            </a>
+          </span>
+
+          <a href="https://dev.to/enter?state=new-user" data-tracking-id="ca_top_nav" data-tracking-source="top_navbar" class="c-cta c-cta--branded whitespace-nowrap mr-2" data-no-instant="">
+            Create account
+          </a>
+        </div>
+    </div>
+  </div>
+</header>
+
+<div class="hamburger">
+  <div class="hamburger__content">
+    <header class="hamburger__content__header">
+      <h2 class="fs-l fw-bold flex-1 break-word lh-tight">DEV Community</h2>
+
+      <button class="c-btn c-btn--icon-alone js-hamburger-trigger shrink-0" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ancbjq47hifl7nbb01r5dpsrqc8p7mub" aria-hidden="true" class="crayons-icon c-btn__icon"><title id="ancbjq47hifl7nbb01r5dpsrqc8p7mub">Close</title><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636l4.95 4.95z"></path></svg>
+
+      </button>
+    </header>
+
+    <div class="p-2 js-navigation-links-container" id="authentication-hamburger-actions">
+    </div>
+  </div>
+  <div class="hamburger__overlay js-hamburger-trigger"></div>
+</div>
+
+
+        <div id="active-broadcast" class="broadcast-wrapper"></div>
+  <div id="base-payment-pointer" data-payment-pointer="$ilp.uphold.com/24HhrUGG7ekn"></div>
+<div id="page-content" class="wrapper stories stories-show" data-current-page="stories-show">
+  <div id="page-content-inner" data-follow-clicks-initialized="true">
+    <div id="page-route-change" class="screen-reader-only" aria-live="polite" aria-atomic="true"></div>
+    
+
+
+<style>
+  .html-variant-wrapper { display: none}
+</style>
+
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/webcomponents-loader.js" integrity="sha384-3HK5hxQbkFqOIxMbpROlRmRtYl2LBZ52t+tqcjzsmr9NJuOWQxl8RgQSyFvq2lhy" crossorigin="anonymous" defer=""></script>
+
+  <script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_webShare-56fe944952e8bb38b6eb.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/webShare-02ba705e71073a450e17.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_articlePage-c6f47342ecdb43295cde.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/0-6bf46cb11ef27e3ebc1f.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/1-0a11659385a997393010.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/articlePage-dea4d7e78976fa3460b1.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_commentDropdowns-7a38b172739b7a0a786e.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/commentDropdowns-fb7a121f151f7807c4bb.chunk.js" defer="defer"></script>
+
+    <script type="application/ld+json">
+      {"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8"},"url":"https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8","image":["https://dev.to/social_previews/article/572671.png","https://dev.to/social_previews/article/572671.png","https://dev.to/social_previews/article/572671.png"],"publisher":{"@context":"http://schema.org","@type":"Organization","name":"DEV Community","logo":{"@context":"http://schema.org","@type":"ImageObject","url":"https://res.cloudinary.com/practicaldev/image/fetch/s--t7tVouP9--/c_limit,f_png,fl_progressive,q_80,w_192/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png","width":"192","height":"192"}},"headline":"How to create responsive typography using CSS — Three different methods explained","author":{"@context":"http://schema.org","@type":"Person","url":"https://dev.to/laurilllll","name":"Lauri Lännenmäki"},"datePublished":"2021-01-20T20:52:14Z","dateModified":"2022-03-06T09:06:16Z"}
+    </script>
+
+  
+<div class="crayons-layout crayons-layout--3-cols crayons-layout--article">
+  <aside class="crayons-layout__sidebar-left" aria-label="Article actions">
+    <div class="crayons-article-actions print-hidden">
+  <div class="crayons-article-actions__inner">
+        
+<div class="reaction-drawer__outer hoverdown" style="">
+  <button id="reaction-drawer-trigger" aria-label="reaction-drawer-trigger" aria-pressed="false" class="hoverdown-trigger crayons-reaction pseudo-reaction crayons-tooltip__activator relative">
+      <span class="crayons-reaction__icon crayons-reaction__icon--borderless crayons-reaction--like crayons-reaction__icon--inactive" style="width: 40px; height: 40px">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true" class="crayons-icon">
+    <g clip-path="url(#clip0_988_3276)">
+        <path d="M19 14V17H22V19H18.999L19 22H17L16.999 19H14V17H17V14H19ZM20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.992L19.059 11.574C20.39 10.05 20.32 7.65998 18.827 6.16998C17.324 4.67098 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09103 4.60598 6.67503 4.66798 5.17203 6.17198C3.68203 7.66198 3.60703 10.047 4.98003 11.623L13.412 20.069L12 21.485L3.52003 12.993C1.41603 10.637 1.49503 7.01898 3.75603 4.75698C6.02103 2.49298 9.64403 2.41698 12 4.52898C14.349 2.41998 17.979 2.48998 20.242 4.75698H20.243Z" fill="#525252"></path>
+    </g>
+    <defs>
+        <clippath id="clip0_988_3276">
+        <rect width="24" height="24" fill="white"></rect>
+        </clippath>
+    </defs>
+</svg>
+
+      </span>
+      <span class="crayons-reaction__icon crayons-reaction__icon--borderless crayons-reaction__icon--active" style="width: 40px; height: 40px">
+        <img aria_hidden="true" height="24" width="24" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/heart-plus-active-9ea3b22f2bc311281db911d416166c5f430636e76b15cd5df6b3b841d830eefa.svg">
+      </span>
+      <span class="crayons-reaction__count" id="reaction_total_count">74</span>
+  </button>
+
+  <div class="reaction-drawer" aria-expanded="false">
+    <div class="reaction-drawer__container">
+        <button id="reaction-butt-like" aria-label="Like" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2 activated" data-category="like">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-like">66</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+</button>
+
+        <button id="reaction-butt-unicorn" aria-label="Unicorn" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2 activated" data-category="unicorn">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-unicorn">8</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Unicorn
+    </span>
+</button>
+
+        <button id="reaction-butt-exploding_head" aria-label="Exploding Head" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2" data-category="exploding_head">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-exploding_head">0</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Exploding Head
+    </span>
+</button>
+
+        <button id="reaction-butt-raised_hands" aria-label="Raised Hands" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2" data-category="raised_hands">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-raised_hands">0</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Raised Hands
+    </span>
+</button>
+
+        <button id="reaction-butt-fire" aria-label="Fire" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2" data-category="fire">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-fire">0</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Fire
+    </span>
+</button>
+
+    </div>
+  </div>
+</div>
+
+<button id="reaction-butt-comment" aria-label="Jump to Comments" aria-pressed="false" class="crayons-reaction crayons-reaction--comment crayons-tooltip__activator relative" data-category="comment">
+    <span class="crayons-reaction__icon crayons-reaction__icon--borderless crayons-reaction__icon--inactive">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" class="crayons-icon">
+    <path d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z"></path>
+</svg>
+
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-comment" data-count="7">7</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Jump to Comments
+    </span>
+</button>
+
+<button id="reaction-butt-readinglist" aria-label="Add to reading list" aria-pressed="false" class="crayons-reaction crayons-reaction--readinglist crayons-tooltip__activator relative activated" data-category="readinglist">
+    <span class="crayons-reaction__icon crayons-reaction__icon--borderless crayons-reaction__icon--inactive">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" class="crayons-icon">
+    <path d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"></path>
+</svg>
+
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-readinglist">97</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Save
+    </span>
+</button>
+
+
+    <div id="mod-actions-menu-btn-area" class="print-hidden hidden align-center"></div>
+    <div class="align-center m:relative">
+      <button id="article-show-more-button" aria-controls="article-show-more-dropdown" aria-expanded="false" aria-haspopup="true" class="dropbtn crayons-btn crayons-btn--ghost-dimmed crayons-btn--icon-rounded" aria-label="Share post options" data-initialized="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="arr4utmy2tt0bhyy1qvhhc4f68hflayo" aria-hidden="true" class="crayons-icon dropdown-icon"><title id="arr4utmy2tt0bhyy1qvhhc4f68hflayo">More...</title><path fill-rule="evenodd" clip-rule="evenodd" d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+
+      </button>
+
+      <div id="article-show-more-dropdown" class="crayons-dropdown side-bar left-2 right-2 m:right-auto m:left-100 s:left-auto mb-1 m:mb-0 top-unset bottom-100 m:top-0 m:bottom-unset">
+        <div>
+          <button id="copy-post-url-button" class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0" data-posturl="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8">
+            <span class="fw-bold">Copy link</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="article-copy-icon" role="img" aria-labelledby="abktjwq9656u97y4726np5093udw3hwt" aria-hidden="true" class="crayons-icon mx-2 shrink-0"><title id="abktjwq9656u97y4726np5093udw3hwt">Copy link</title>
+    <path d="M7 6V3a1 1 0 011-1h12a1 1 0 011 1v14a1 1 0 01-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1 1 0 013 21l.003-14c0-.552.45-1 1.007-1H7zm2 0h8v10h2V4H9v2zm-2 5v2h6v-2H7zm0 4v2h6v-2H7z"></path>
+</svg>
+
+          </button>
+          <div id="article-copy-link-announcer" aria-live="polite" class="crayons-notice crayons-notice--success my-2 p-1" hidden="">Copied to Clipboard</div>
+        </div>
+
+        <div class="Desktop-only">
+          <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://twitter.com/intent/tweet?text=%22How%20to%20create%20responsive%20typography%20using%20CSS%20%E2%80%94%20Three%20different%20methods%20explained%22%20by%20%40laurilllll%20%23DEVCommunity%20https%3A%2F%2Fdev.to%2Flaurilllll%2Fhow-to-create-responsive-typography-using-css-three-different-methods-explained-50f8">
+            Share to Twitter
+          </a>
+          <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fdev.to%2Flaurilllll%2Fhow-to-create-responsive-typography-using-css-three-different-methods-explained-50f8&amp;title=How%20to%20create%20responsive%20typography%20using%20CSS%20%E2%80%94%20Three%20different%20methods%20explained&amp;summary=Good%20typography%20is%20one%20of%20the%20key%20elements%20of%20a%20website.%20Let%27s%20take%20a%20look%20at%20three%20different%20methods...&amp;source=DEV%20Community">
+            Share to LinkedIn
+          </a>
+          <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://www.reddit.com/submit?url=https%3A%2F%2Fdev.to%2Flaurilllll%2Fhow-to-create-responsive-typography-using-css-three-different-methods-explained-50f8&amp;title=How%20to%20create%20responsive%20typography%20using%20CSS%20%E2%80%94%20Three%20different%20methods%20explained">
+            Share to Reddit
+          </a>
+          <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fdev.to%2Flaurilllll%2Fhow-to-create-responsive-typography-using-css-three-different-methods-explained-50f8&amp;t=How%20to%20create%20responsive%20typography%20using%20CSS%20%E2%80%94%20Three%20different%20methods%20explained">
+            Share to Hacker News
+          </a>
+          <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.to%2Flaurilllll%2Fhow-to-create-responsive-typography-using-css-three-different-methods-explained-50f8">
+            Share to Facebook
+          </a>
+          <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://toot.kytta.dev/?text=https%3A%2F%2Fdev.to%2Flaurilllll%2Fhow-to-create-responsive-typography-using-css-three-different-methods-explained-50f8">
+            Share to Mastodon
+          </a>
+        </div>
+
+        <web-share-wrapper shareurl="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8" sharetitle="How to create responsive typography using CSS — Three different methods explained" sharetext="Good typography is one of the key elements of a website. Let&#39;s take a look at three different methods..." template="web-share-button">
+        </web-share-wrapper>
+        <template id="web-share-button"></template>
+
+        <a href="https://dev.to/report-abuse" class="crayons-link crayons-link--block">Report Abuse</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </aside>
+
+  <main id="main-content" class="crayons-layout__content grid gap-4">
+    <div class="article-wrapper">
+
+
+      <article class="crayons-card crayons-article mb-4" id="article-show-container" data-article-id="572671" data-article-slug="how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8" data-author-id="378290" data-author-name="Lauri Lännenmäki" data-author-username="laurilllll" data-co-author-ids="" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8" data-pin-path="/stories/feed/pinned_article" data-pinned-article-id="" data-published="true" data-scheduled="false">
+        <header class="crayons-article__header" id="main-title">
+
+          <div class="crayons-article__header__meta">
+            <div class="flex s:items-start flex-col s:flex-row">
+              <div id="action-space" class="crayons-article__actions mb-4 s:mb-0 s:order-last"></div>
+              <div class="flex flex-1 mb-5 items-start">
+                <div class="relative">
+                    <a href="https://dev.to/laurilllll"><img class="radius-full align-middle" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/11b59b59-9c72-401f-82fe-a64c33d52b25.jpg" width="40" height="40" alt="Lauri Lännenmäki"></a>
+                </div>
+                <div class="pl-3 flex-1">
+                  <a href="https://dev.to/laurilllll" class="crayons-link fw-bold">Lauri Lännenmäki</a>
+                  <p class="fs-xs color-base-60">
+                      Posted on <time datetime="2021-01-20T20:52:14Z" class="date" title="Thursday, January 21, 2021 at 4:52:14 AM">Jan 21, 2021</time>
+
+                      • Updated on <time datetime="2022-03-06T09:06:16Z" class="date" title="Sunday, March 6, 2022 at 5:06:16 PM">Mar 6, 2022</time>
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="multiple_reactions_engagement">
+    <span class="reaction_engagement_like">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="24" height="24">
+      <span id="reaction_engagement_like_count">66</span>
+    </span>
+    <span class="reaction_engagement_unicorn">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="24" height="24">
+      <span id="reaction_engagement_unicorn_count">8</span>
+    </span>
+    <span class="reaction_engagement_exploding_head hidden">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="24" height="24">
+      <span id="reaction_engagement_exploding_head_count">&nbsp;</span>
+    </span>
+    <span class="reaction_engagement_raised_hands hidden">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="24" height="24">
+      <span id="reaction_engagement_raised_hands_count">&nbsp;</span>
+    </span>
+    <span class="reaction_engagement_fire hidden">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="24" height="24">
+      <span id="reaction_engagement_fire_count">&nbsp;</span>
+    </span>
+
+  <span class="placeholder" style="width: 24px; height: 24px;">&nbsp;</span>
+</div>
+
+
+            <h1 class="fs-3xl m:fs-4xl l:fs-5xl fw-bold s:fw-heavy lh-tight mb-2 longer">
+              How to create responsive typography using CSS — Three different methods explained
+            </h1>
+
+              <div class="spec__tags flex flex-wrap">
+                  <a class="crayons-tag   " style="
+        --tag-bg: rgba(41, 101, 241, 0.10);
+        --tag-prefix: #2965F1;
+        --tag-bg-hover: rgba(41, 101, 241, 0.10);
+        --tag-prefix-hover: #2965F1;
+      " href="https://dev.to/t/css"><span class="crayons-tag__prefix">#</span>css</a>
+                  <a class="crayons-tag   " style="
+        --tag-bg: rgba(245, 57, 0, 0.10);
+        --tag-prefix: #F53900;
+        --tag-bg-hover: rgba(245, 57, 0, 0.10);
+        --tag-prefix-hover: #F53900;
+      " href="https://dev.to/t/html"><span class="crayons-tag__prefix">#</span>html</a>
+                  <a class="crayons-tag   " style="
+        --tag-bg: rgba(254, 255, 165, 0.10);
+        --tag-prefix: #FEFFA5;
+        --tag-bg-hover: rgba(254, 255, 165, 0.10);
+        --tag-prefix-hover: #FEFFA5;
+      " href="https://dev.to/t/tutorial"><span class="crayons-tag__prefix">#</span>tutorial</a>
+                  <a class="crayons-tag   " style="
+        --tag-bg: rgba(86, 39, 101, 0.10);
+        --tag-prefix: #562765;
+        --tag-bg-hover: rgba(86, 39, 101, 0.10);
+        --tag-prefix-hover: #562765;
+      " href="https://dev.to/t/webdev"><span class="crayons-tag__prefix">#</span>webdev</a>
+              </div>
+          </div>
+        </header>
+
+        <div class="crayons-article__main">
+
+          <div class="crayons-article__body text-styles spec__body" data-article-id="572671" id="article-body">
+            <p>Good typography is one of the key elements of a website. Let's take a look at <strong>three different methods</strong> on <strong>how to create responsive typography using CSS</strong>.</p>
+
+<p><strong>The three methods are:</strong></p>
+
+<ol>
+<li>Responsive typography using <strong>only media queries</strong>
+</li>
+<li>Responsive typography using <strong>a CSS custom property as a multiplier</strong>
+</li>
+<li>Responsive typography using <strong>the CSS clamp() function</strong>
+</li>
+</ol>
+
+<p><strong>TL;DR:</strong> Check out the final <a href="https://codepen.io/laurilllll/pen/ZEWZvBg">Codepen with all the methods</a>. Resize the viewport to see the effect.</p>
+
+
+<hr>
+
+<h3>
+  <a name="why-should-you-use-responsive-typography" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#why-should-you-use-responsive-typography">
+  </a>
+  Why should you use responsive typography?
+</h3>
+
+<p>The web is used on various screen sizes. Your site has to work on <strong>mobile</strong>, <strong>tablet</strong>, <strong>laptop</strong>, <strong>desktop</strong> and basically everything in between so there's a lot to take into consideration.</p>
+
+<blockquote>
+<p>All of the method examples below are <strong>simplified</strong> as they only cover <strong>three selectors</strong> and <strong>one breakpoint</strong>.</p>
+</blockquote>
+
+<p>You can use this simple <strong>HTML</strong> to try out all the methods in this tutorial:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight html"><code><span class="nt">&lt;h1&gt;</span>How to create responsive typography using CSS<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+  Vestibulum molestie sapien eget orci pellentesque, et aliquam lectus convallis. Phasellus neque velit, ultricies ut lacus at, finibus lobortis dui. Proin eget diam elit.
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Three different methods explained<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+  Pellentesque sagittis nisl nec rhoncus porta. Quisque luctus turpis nec turpis consequat fermentum et vitae diam.
+<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p><em>Let's dig in!</em></p>
+
+
+<hr>
+
+<h2>
+  <a name="method-1-responsive-typography-using-only-media-queries" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#method-1-responsive-typography-using-only-media-queries">
+  </a>
+  Method 1: Responsive typography using only media queries
+</h2>
+
+<p>This is the most basic method in our list.</p>
+
+<p>Simply, <strong>declare your text styles</strong> and <strong>increase the font-size on bigger screens</strong> using a breakpoint:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight css"><code><span class="c">/* Declare text styles */</span>
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Increase font sizes by 1.5x on bigger screens */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">48rem</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">h1</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">3em</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">h2</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">2.25em</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">p</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Check out the result from this <a href="https://codepen.io/laurilllll/pen/bGwJbJb">Codepen</a>. Resize the viewport to see the effect.</p>
+
+<p><iframe height="600" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/bGwJbJb(1).html" scrolling="no" frameborder="no" allowtransparency="true" loading="lazy" style="width: 100%;">
+</iframe>
+</p>
+
+<p>Using this method is totally fine and it does the job very well.</p>
+
+<p>The <strong>downside is the large amount of code</strong> you have to write. The codebase gets larger with every new selector you need to add. You have to write the styles <strong>separately</strong> for <strong>every selector in each breakpoint</strong>.</p>
+
+<blockquote>
+<p>In a real world you would probably have text selectors <strong>h1</strong>, <strong>h2</strong>, <strong>h3</strong>, <strong>h4</strong>, <strong>h5</strong>, <strong>h6</strong>, <strong>p</strong> and at least <strong>two breakpoints</strong>. At that point, this code is would've already gone <strong>from 20 lines to 67 lines</strong>. That's <strong>3.35x</strong> increase in the amount of code.</p>
+</blockquote>
+
+<p>The next method will show how to <strong>decrease the code amount</strong> and make it <strong>easier to maintain!</strong></p>
+
+
+<hr>
+
+<h2>
+  <a name="method-2-responsive-typography-using-a-css-custom-property-as-a-multiplier" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#method-2-responsive-typography-using-a-css-custom-property-as-a-multiplier">
+  </a>
+  Method 2: Responsive typography using a CSS custom property as a multiplier
+</h2>
+
+<p><strong>CSS custom properties</strong> (variables) are super powerful. In the previous method, we increased the font sizes <em>manually</em> one selector at a time. Now, we'll <strong>declare a multiplier variable</strong> for the font-sizes and only <strong>increase the value of the multiplier</strong> inside a breakpoint.</p>
+
+<p>Let's look at the code example in full and then break it down:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight css"><code><span class="c">/* Declare a font size multiplier variable */</span>
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--text-multiplier</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Increase the size of the multiplier on bigger screens */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">48rem</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">--text-multiplier</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Declare text styles using calc() function and the multiplier */</span>
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">2em</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--text-multiplier</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">1.5em</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--text-multiplier</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">1em</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--text-multiplier</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Check out the result from this <a href="https://codepen.io/laurilllll/pen/ZEpZzPB">Codepen</a>. Resize the viewport to see the effect.</p>
+
+<p><iframe height="600" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/ZEpZzPB(1).html" scrolling="no" frameborder="no" allowtransparency="true" loading="lazy" style="width: 100%;">
+</iframe>
+</p>
+
+<p><strong>The first step</strong> is to <strong>declare a variable</strong> that we use to control our font size later on. We set the default value to <strong>1</strong>.<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight css"><code><span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--text-multiplier</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p><strong>The second step</strong> is to <strong>increase the multiplier value</strong> inside a breakpoint. Unlike SASS variables, CSS custom properties <strong>can be used inside media queries</strong>.<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight css"><code><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">48rem</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">--text-multiplier</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p><strong>The last step</strong> is to declare our font-sizes but this time we use <strong>the calc() function</strong> so we can utilise our <strong>multiplier</strong>.<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight css"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">2em</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--text-multiplier</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">1.5em</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--text-multiplier</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="m">1em</span> <span class="err">*</span> <span class="n">var</span><span class="p">(</span><span class="n">--text-multiplier</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>As you can see, <strong>we only need to declare our font sizes once</strong>. This is a huge improvement compared to the first method.</p>
+
+<blockquote>
+<p>Compared to the first method, we only have <strong>17 lines of code compared to 20</strong>. If we would add four more selectors and one breakpoint, our code would <strong>only increase from 17 lines to 34</strong>. Remember that using the first method it would require <strong>67 lines</strong>. Almost twice as much.</p>
+</blockquote>
+
+<p>The decrease of code is due to our elegant way of using a <strong>CSS custom property as a multiplier</strong>. Adding another breakpoint takes only <strong>three lines of code</strong> because we don't have to modify our font sizes at all. The code is also a lot <strong>easier to maintain and modify</strong>.</p>
+
+<p>Adding breakpoints is as simple as:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight css"><code><span class="c">/* Add more breakpoints */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">64rem</span><span class="p">)</span> <span class="p">{</span>
+  <span class="py">--text-multiplier</span><span class="p">:</span> <span class="m">1.75</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">80rem</span><span class="p">)</span> <span class="p">{</span>
+  <span class="py">--text-multiplier</span><span class="p">:</span> <span class="m">2.0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>To the user, this methods <strong>looks exactly the same</strong> as the first but <strong>the code is much better</strong>.</p>
+
+<p>Next up, we'll take a look at a <strong>new CSS clamp() function</strong>.</p>
+
+
+<hr>
+
+<h2>
+  <a name="method-3-responsive-typography-using-the-css-clamp-function" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#method-3-responsive-typography-using-the-css-clamp-function">
+  </a>
+  Method 3: Responsive typography using the CSS clamp() function
+</h2>
+
+<p>The <strong>clamp() function</strong> is pretty powerful! You can set a value using three parameters: <strong>a minimum value</strong>, <strong>a preferred value</strong> and <strong>a maximum value</strong>. Basically you'll have a 3-in-1 value!</p>
+
+<p>Example declaration for responsive text using the <strong>clamp() function</strong> looks like this:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight plaintext"><code>font-size: clamp(2rem, 5vw, 3rem);
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>This allows us to create responsive typography <strong>without any media queries</strong>. <strong>With only one line of code</strong> we set the minimum value (mobile), the maximum value (desktop) and the preferred value.</p>
+
+<p><strong>The font size will become fluid</strong> as it will always be the <strong>preferred value inside the min-max range</strong>. Very powerful!</p>
+
+<p>To set the responsive typography for our demo, it is as simple as this:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight css"><code><span class="c">/* Declare text styles */</span>
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="c">/* Font minimum, preferred and maximum value */</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="n">clamp</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--min</span><span class="p">),</span> <span class="n">var</span><span class="p">(</span><span class="n">--val</span><span class="p">),</span> <span class="n">var</span><span class="p">(</span><span class="n">--max</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="c">/* Font size variables */</span>
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="py">--min</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span> <span class="c">/* minimum value */</span>
+  <span class="py">--val</span><span class="p">:</span> <span class="m">5vw</span><span class="p">;</span> <span class="c">/* preferred value = 5% viewport width */</span>
+  <span class="py">--max</span><span class="p">:</span> <span class="m">3em</span><span class="p">;</span> <span class="c">/* maximum value */</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="py">--min</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span>   <span class="c">/* minimum value */</span>
+  <span class="py">--val</span><span class="p">:</span> <span class="m">4vw</span><span class="p">;</span>     <span class="c">/* preferred value = 4% viewport width */</span>
+  <span class="py">--max</span><span class="p">:</span> <span class="m">2.25em</span><span class="p">;</span>  <span class="c">/* maximum value */</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="py">--min</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>   <span class="c">/* minimum value */</span>
+  <span class="py">--val</span><span class="p">:</span> <span class="m">2.5vw</span><span class="p">;</span> <span class="c">/* preferred value = 2.5% viewport width */</span>
+  <span class="py">--max</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span> <span class="c">/* maximum value */</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Check out the result from this <a href="https://codepen.io/laurilllll/pen/ExgJYRm">Codepen</a>. Resize the viewport to see the effect.</p>
+
+<p><iframe height="600" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/ExgJYRm(1).html" scrolling="no" frameborder="no" allowtransparency="true" loading="lazy" style="width: 100%;">
+</iframe>
+</p>
+
+<p>If you look at the code, you'll see that by using <strong>CSS custom properties together with the clamp() function</strong> we are able to <strong>declare all the text styles at the same time with only on line of code</strong>.</p>
+
+<p>After that, we just set the <strong>--min</strong>, <strong>--val</strong> and <strong>--max</strong> custom properties for each selector and we are done!</p>
+
+<blockquote>
+<p>CSS custom properties can be <strong>scoped inside selectors</strong> so you can <strong>use the same custom properties with multiple selectors</strong> just like we have done here with our <strong>h1</strong>, <strong>h2</strong> and <strong>p</strong>. These custom properties will not clash together even though they have the same name.</p>
+</blockquote>
+
+<p>This method takes up 18 lines of code and with four more selectors and one breakpoint it would be 38 lines. So, it's slightly larger than on the second method but we get <strong>fluid typography</strong> in return.</p>
+
+<p><strong>Note:</strong> The <strong>clamp() function</strong> is pretty new, so you should check if it has the browser support you need from <a href="https://caniuse.com/css-math-functions">caniuse.com</a>.</p>
+
+
+<hr>
+
+<h2>
+  <a name="wrap-up" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#wrap-up">
+  </a>
+  Wrap up
+</h2>
+
+<p><strong>CSS is powerful!</strong></p>
+
+<p>In many cases, there's more than one way to achieve the desired result.</p>
+
+<p>If you read this far, thank you! I hope you learned something new.</p>
+
+<p>Here's the final <a href="https://codepen.io/laurilllll/pen/ZEWZvBg">Codepen with all the methods</a> once more. Resize the viewport to see the effect.</p>
+
+<p><iframe height="600" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/ZEWZvBg(1).html" scrolling="no" frameborder="no" allowtransparency="true" loading="lazy" style="width: 100%;">
+</iframe>
+</p>
+
+
+<hr>
+
+<h2>
+  <a name="thank-you" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#thank-you">
+  </a>
+  Thank you 🙏
+</h2>
+
+<p>I hope you found this article helpful 🔥</p>
+
+<p>You can <a href="https://twitter.com/laurilllll">follow me on Twitter</a> for more <strong>CSS</strong>, <strong>Design System</strong> and <strong>Figma</strong> content 💪 </p>
+
+
+          </div>
+
+        </div>
+          <section id="comments" data-follow-button-container="true" data-updated-at="2023-03-29 00:52:41 UTC" class="text-padding mb-4 border-t-1 border-0 border-solid border-base-10">
+      <header class="relative flex justify-between items-center mb-6">
+        <div class="flex items-center">
+          <h2 class="crayons-subtitle-1">
+            Top comments <span class="js-comments-count" data-comments-count="7">(7)</span>
+          </h2>
+          <button class="c-btn c-btn--ghost crayons-btn--icon-left" id="toggle-comments-sort-dropdown" aria-controls="comments-sort-dropdown-container" aria-expanded="false" aria-label="Sort comments" aria-haspopup="true" data-initialized="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="mt-2"><title>Crown</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+          </button>
+        </div>
+
+        <nav class="crayons-dropdown p-4" id="comments-sort-dropdown-container" aria-labelledby="comments-sort-title">
+            <h3 id="comments-sort-title" class="mb-3">Sort discussion: </h3>
+            <ul class="comments-sort-dropdown__list">
+              <li class="comment-sort-option">
+  <a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8?comments_sort=top#toggle-comments-sort-dropdown" class="comment-sort-option__header pl-7 pb-0 crayons-link--block block" aria-describedby="top-description-text" aria-current="page">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-labelledby="arp7zelnqw15zxt1fkb6zxip9b8ub6vm" aria-hidden="true" class="crayons-icon"><title id="arp7zelnqw15zxt1fkb6zxip9b8ub6vm">Selected Sort Option</title>
+    <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414 4.95 4.95z"></path>
+</svg>
+
+       Top
+    </div>
+     <div id="top-description-text" class="crayons-field__description">
+      Most upvoted and relevant comments will be first
+    </div>
+  </a>
+</li>
+
+              <li class="comment-sort-option">
+  <a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8?comments_sort=latest#toggle-comments-sort-dropdown" class="comment-sort-option__header pl-7 pb-0 crayons-link--block block" aria-describedby="latest-description-text" aria-current="">
+    <div>
+      
+       Latest
+    </div>
+     <div id="latest-description-text" class="crayons-field__description">
+      Most recent comments will be first
+    </div>
+  </a>
+</li>
+
+              <li class="comment-sort-option">
+  <a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8?comments_sort=oldest#toggle-comments-sort-dropdown" class="comment-sort-option__header pl-7 pb-0 crayons-link--block block" aria-describedby="oldest-description-text" aria-current="">
+    <div>
+      
+       Oldest
+    </div>
+     <div id="oldest-description-text" class="crayons-field__description">
+      The oldest comments will be first
+    </div>
+  </a>
+</li>
+
+            </ul>
+        </nav>
+
+        <div id="comment-subscription" class="print-hidden"><div class="static"><div role="group" aria-label="Comment subscription options" class="crayons-btn-group"><button class="crayons-btn crayons-btn--outlined" type="button" data-tracking-name="comment_subscription_toggle">Subscribe</button></div></div>
+          
+        </div>
+      </header>
+
+      <div id="comments-container" data-testid="comments-container" data-commentable-id="572671" data-commentable-type="Article" data-has-recent-comment-activity="false">
+
+          <div id="response-templates-data" class="hidden"></div>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_validateFileInputs-3ab934a19b9c8ba0ee68.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/0-6bf46cb11ef27e3ebc1f.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/1-0a11659385a997393010.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/validateFileInputs-4699e410baed33766c12.chunk.js" defer="defer"></script>
+
+
+<form class="comment-form print-hidden" id="new_comment" action="https://dev.to/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓" autocomplete="off">
+
+  <input type="hidden" name="authenticity_token" value="NOTHING" id="new_comment_authenticity_token">
+
+    <input value="572671" autocomplete="off" type="hidden" name="comment[commentable_id]" id="comment_commentable_id">
+    <input value="Article" autocomplete="off" type="hidden" name="comment[commentable_type]" id="comment_commentable_type">
+    
+
+  <span class="crayons-avatar m:crayons-avatar--l mr-2 shrink-0">
+    <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/devlogo-pwa-512.png" width="32" height="32" alt="pic" class="crayons-avatar__image overflow-hidden" id="comment-primary-user-profile--avatar" loading="lazy">
+  </span>
+  <div class="comment-form__inner">
+    <div class="comment-form__field" data-tracking-name="comment_form_textfield">
+      <textarea placeholder="Add to the discussion" onfocus="handleFocus(event)" onkeyup="handleKeyUp(event)" onkeydown="handleKeyDown(event)" oninput="handleChange(event)" id="text-area" required="required" class="crayons-textfield comment-textarea crayons-textfield--ghost" aria-label="Add a comment to the discussion" name="comment[body_markdown]"></textarea>
+
+    </div>
+
+    <div class="response-templates-container crayons-card crayons-card--secondary p-4 mb-4 comment-form__templates fs-base hidden">
+      <header class="mb-3">
+        <button type="button" class="crayons-btn personal-template-button active" data-target-type="personal" data-form-id="new_comment">Personal</button>
+        <button type="button" class="crayons-btn moderator-template-button hidden" data-target-type="moderator" data-form-id="new_comment">Trusted User</button>
+      </header>
+
+      <img class="loading-img hidden" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/loading-ellipsis-b714cf681fd66c853ff6f03dd161b77aa3c80e03cdc06f478b695f42770421e9.svg" alt="loading" loading="lazy">
+
+      <div class="personal-responses-container">
+      </div>
+      <div class="moderator-responses-container hidden">
+      </div>
+
+      <a target="_blank" rel="noopener nofollow" href="https://dev.to/settings/response-templates">
+        Create template
+      </a>
+      <p>Templates let you quickly answer FAQs or store snippets for re-use.</p>
+    </div>
+
+    <div class="comment-form__preview text-styles text-styles--secondary" id="preview-div"></div>
+
+    <div class="comment-form__buttons mb-4">
+      <button type="submit" class="crayons-btn mr-2 js-btn-enable" onclick="validateField(event)" data-tracking-name="comment_submit_button" disabled="">Submit</button>
+      <button type="button" class="preview-toggle crayons-btn crayons-btn--secondary comment-action-preview js-btn-enable mr-2" data-tracking-name="comment_preview_button" disabled="">Preview</button>
+      <a href="https://dev.to/404.html" class="dismiss-edit-comment crayons-btn crayons-btn--ghost js-btn-dismiss hidden">Dismiss</a>
+    </div>
+  </div>
+
+  <div class="code-of-conduct" id="toggle-code-of-conduct-checkbox"></div>
+</form>
+
+
+        <div class="comments" id="comment-trees-container">
+                <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-0
+                    root
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="m:mx-1 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ab3iklrrobpy8x0jjqupatf8n5u8m4v0" class="crayons-icon expanded"><title id="ab3iklrrobpy8x0jjqupatf8n5u8m4v0">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="agm7sbvcx4kkmnol4m743o59l6imakgr" class="crayons-icon collapsed"><title id="agm7sbvcx4kkmnol4m743o59l6imakgr">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-646207" class="
+      comment single-comment-node
+      
+      root
+      comment--deep-0
+      
+    " data-comment-id="646207" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1ajo3" data-comment-author-id="538689" data-content-user-id="538689">
+    <a name="comment-1ajo3" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/itscasey" class="shrink-0 crayons-avatar m:crayons-avatar--l mt-4 m:mt-3">
+    <img class="crayons-avatar__image" width="32" height="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/8145eac9-f9bc-462b-a17b-b36d02af0cd1.jpg" alt="itscasey profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/itscasey" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">Casey 💎</span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-646207" aria-controls="comment-profile-preview-content-646207" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="Casey 💎 profile details" aria-expanded="false" aria-haspopup="true" data-initialized="true">
+      Casey 💎
+    </button>
+    <div id="comment-profile-preview-content-646207" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #0078b2; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/itscasey" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/8145eac9-f9bc-462b-a17b-b36d02af0cd1(1).jpg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">Casey 💎</span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:538689,&quot;name&quot;:&quot;Casey 💎&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: Casey 💎" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    All about Engineering &amp;&amp; Community! Self-taught engineer now a CTO
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+        <li>
+          <div class="key">
+            Location
+          </div>
+          <div class="value">
+            California
+          </div>
+        </li>
+          <li>
+            <div class="key">
+              Work
+            </div>
+            <div class="value">
+              CTO @ Hatchfi
+            </div>
+          </li>
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2020-12-11T19:33:32Z" class="date" title="Saturday, December 12, 2020 at 3:33:32 AM">Dec 12, 2020</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1ajo3" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2021-01-20T21:08:55Z" class="date-short-year" title="Thursday, January 21, 2021 at 5:08:55 AM">Jan 21 '21</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-646207" aria-controls="comment-dropdown-646207" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a4yqlvkzbe2mqa56mkxscsl9nubxjmlo" class="crayons-icon pointer-events-none"><title id="a4yqlvkzbe2mqa56mkxscsl9nubxjmlo">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-646207" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1ajo3" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to Casey 💎&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="538689" data-action="settings-button" data-path="https://dev.to/itscasey/comment/1ajo3/settings" aria-label="Go to Casey 💎&#39;s comment settings"></li>
+        <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="378290" data-user-id="538689">
+            <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="646207" data-comment-url="https://dev.to/itscasey/comment/1ajo3" aria-label="Hide Casey 💎&#39;s comment">
+              Hide
+            </button>
+        </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/itscasey/comment/1ajo3/mod" aria-label="Moderate Casey 💎&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/itscasey/comment/1ajo3" aria-label="Report Casey 💎&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/itscasey/comment/1ajo3" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>Nice write up!</p>
+
+<p>I have found that clamp is the best solution for my use cases, but as you suggest there's no wrong solution here if it works 😊</p>
+
+
+        </div>
+
+    </div>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-646207" data-comment-id="646207" aria-label="like" data-tracking-name="comment_heart_button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a274v7qh0ahds36cau7yy14d9e780nzj" class="crayons-icon reaction-icon not-reacted"><title id="a274v7qh0ahds36cau7yy14d9e780nzj">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ab9p0gchup5je7v78knwycc25pu1ns51" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="ab9p0gchup5je7v78knwycc25pu1ns51">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">2</span><span class="reactions-label hidden m:inline-block">&nbsp;likes</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+      <a class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/new/1ajo3" data-comment-id="646207" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1ajo3" data-tracking-name="comment_reply_button" data-testid="reply-button-646207" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a89nk52ti7962t9kt7d1611a40c1yvc5" class="crayons-icon reaction-icon not-reacted"><title id="a89nk52ti7962t9kt7d1611a40c1yvc5">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </a>
+
+</footer>
+
+  </div>
+</div>
+    <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-1
+                    child
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="mx-0 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ar2r0q5nmx09ucf7quwk2thfvxncsxb4" class="crayons-icon expanded"><title id="ar2r0q5nmx09ucf7quwk2thfvxncsxb4">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a2tkltwlgmbdtto7maclznot6w070vtb" class="crayons-icon collapsed"><title id="a2tkltwlgmbdtto7maclznot6w070vtb">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-646215" class="
+      comment single-comment-node
+      
+      child
+      comment--deep-1
+      
+    " data-comment-id="646215" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1ajob" data-comment-author-id="378290" data-content-user-id="378290">
+    <a name="comment-1ajob" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/laurilllll" class="shrink-0 crayons-avatar mt-4">
+    <img class="crayons-avatar__image" width="32" height="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/11b59b59-9c72-401f-82fe-a64c33d52b25.jpg" alt="laurilllll profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/laurilllll" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">Lauri Lännenmäki</span>
+      <span class="crayons-hover-tooltip inline-block spec-op-author -mr-2" data-tooltip="Author">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" class="crayons-icon">
+    <path d="M12 8.25a6 6 0 110 12 6 6 0 010-12zm0 2.625l-.992 2.01-2.218.322 1.605 1.564-.379 2.21L12 15.937l1.984 1.043-.379-2.209 1.605-1.564-2.218-.323L12 10.875zm.75-6.376l3.75.001v2.25l-1.022.854a7.45 7.45 0 00-2.728-.817V4.5zm-1.5 0v2.288a7.451 7.451 0 00-2.727.816L7.5 6.75V4.5h3.75z"></path>
+</svg>
+
+      </span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-646215" aria-controls="comment-profile-preview-content-646215" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="Lauri Lännenmäki profile details" aria-expanded="false" aria-haspopup="true" data-initialized="true">
+      Lauri Lännenmäki
+    </button>
+    <div id="comment-profile-preview-content-646215" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #000000; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/laurilllll" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/11b59b59-9c72-401f-82fe-a64c33d52b25(1).jpg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">Lauri Lännenmäki</span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:378290,&quot;name&quot;:&quot;Lauri Lännenmäki&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: Lauri Lännenmäki" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    🔥 UX Engineer // Working @FraktioHQ // Co-Founder of IVALO.COM
+
+💪  I teach about CSS, Design Systems and Figma with over a decade of experience in the industry.
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+        <li>
+          <div class="key">
+            Location
+          </div>
+          <div class="value">
+            Helsinki, Finland
+          </div>
+        </li>
+          <li>
+            <div class="key">
+              Education
+            </div>
+            <div class="value">
+              Engineer
+            </div>
+          </li>
+          <li>
+            <div class="key">
+              Work
+            </div>
+            <div class="value">
+              UX Engineer
+            </div>
+          </li>
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2020-05-02T20:15:05Z" class="date" title="Sunday, May 3, 2020 at 4:15:05 AM">May 3, 2020</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+      <span class="crayons-hover-tooltip inline-block spec-op-author -ml-2" data-tooltip="Author">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" class="crayons-icon">
+    <path d="M12 8.25a6 6 0 110 12 6 6 0 010-12zm0 2.625l-.992 2.01-2.218.322 1.605 1.564-.379 2.21L12 15.937l1.984 1.043-.379-2.209 1.605-1.564-2.218-.323L12 10.875zm.75-6.376l3.75.001v2.25l-1.022.854a7.45 7.45 0 00-2.728-.817V4.5zm-1.5 0v2.288a7.451 7.451 0 00-2.727.816L7.5 6.75V4.5h3.75z"></path>
+</svg>
+
+      </span>
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1ajob" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2021-01-20T21:27:23Z" class="date-short-year" title="Thursday, January 21, 2021 at 5:27:23 AM">Jan 21 '21</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-646215" aria-controls="comment-dropdown-646215" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a6t8hiplmpz8f0j4b9veeez33lmliory" class="crayons-icon pointer-events-none"><title id="a6t8hiplmpz8f0j4b9veeez33lmliory">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-646215" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1ajob" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to Lauri Lännenmäki&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="378290" data-action="settings-button" data-path="https://dev.to/laurilllll/comment/1ajob/settings" aria-label="Go to Lauri Lännenmäki&#39;s comment settings"></li>
+        <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="378290" data-user-id="378290">
+            <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="646215" data-comment-url="https://dev.to/laurilllll/comment/1ajob" aria-label="Hide Lauri Lännenmäki&#39;s comment">
+              Hide
+            </button>
+        </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/laurilllll/comment/1ajob/mod" aria-label="Moderate Lauri Lännenmäki&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/laurilllll/comment/1ajob" aria-label="Report Lauri Lännenmäki&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/laurilllll/comment/1ajob" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>Thank you very much Casey! This was my first tech post ever so your words mean a lot 😊</p>
+
+
+        </div>
+
+    </div>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-646215" data-comment-id="646215" aria-label="like" data-tracking-name="comment_heart_button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ahbfihxjgw0dqi5nhzrtki3714exo6mv" class="crayons-icon reaction-icon not-reacted"><title id="ahbfihxjgw0dqi5nhzrtki3714exo6mv">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="amxh9ivp3rrs64q97lhfumo7tschdo5x" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="amxh9ivp3rrs64q97lhfumo7tschdo5x">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">1</span><span class="reactions-label hidden m:inline-block">&nbsp;like</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+      <a class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/new/1ajob" data-comment-id="646215" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1ajob" data-tracking-name="comment_reply_button" data-testid="reply-button-646215" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a4s85rocswi7m066cfsl0vg20pvjz0xi" class="crayons-icon reaction-icon not-reacted"><title id="a4s85rocswi7m066cfsl0vg20pvjz0xi">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </a>
+
+</footer>
+
+  </div>
+</div>
+
+
+  </div>
+    </details>
+
+
+  </div>
+    </details>
+
+    <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-0
+                    root
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="m:mx-1 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ajlheuskuctt80qkich473ibl0t8o3br" class="crayons-icon expanded"><title id="ajlheuskuctt80qkich473ibl0t8o3br">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a5n3dnzpa5rc6pxfg16m77nsu1a6lvbg" class="crayons-icon collapsed"><title id="a5n3dnzpa5rc6pxfg16m77nsu1a6lvbg">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-646482" class="
+      comment single-comment-node
+      
+      root
+      comment--deep-0
+      
+    " data-comment-id="646482" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1ak8i" data-comment-author-id="214575" data-content-user-id="214575">
+    <a name="comment-1ak8i" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/pris_stratton" class="shrink-0 crayons-avatar m:crayons-avatar--l mt-4 m:mt-3">
+    <img class="crayons-avatar__image" width="32" height="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/9c78374b-48f1-4994-9dc0-457f0c7c3a1f.jpeg" alt="pris_stratton profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/pris_stratton" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">pris stratton</span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-646482" aria-controls="comment-profile-preview-content-646482" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="pris stratton profile details" aria-expanded="false" aria-haspopup="true" data-initialized="true">
+      pris stratton
+    </button>
+    <div id="comment-profile-preview-content-646482" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #d790a9; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/pris_stratton" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/9c78374b-48f1-4994-9dc0-457f0c7c3a1f(1).jpeg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">pris stratton</span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:214575,&quot;name&quot;:&quot;pris stratton&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: pris stratton" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    I love learning coding languages and paradigms, mainly for the sake of it 
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2019-08-19T06:39:59Z" class="date" title="Monday, August 19, 2019 at 2:39:59 PM">Aug 19, 2019</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1ak8i" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2021-01-21T08:50:15Z" class="date-short-year" title="Thursday, January 21, 2021 at 4:50:15 PM">Jan 21 '21</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-646482" aria-controls="comment-dropdown-646482" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ahnaapqujb42ta818p698ylmvv1wo2qm" class="crayons-icon pointer-events-none"><title id="ahnaapqujb42ta818p698ylmvv1wo2qm">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-646482" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1ak8i" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to pris stratton&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="214575" data-action="settings-button" data-path="https://dev.to/pris_stratton/comment/1ak8i/settings" aria-label="Go to pris stratton&#39;s comment settings"></li>
+        <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="378290" data-user-id="214575">
+            <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="646482" data-comment-url="https://dev.to/pris_stratton/comment/1ak8i" aria-label="Hide pris stratton&#39;s comment">
+              Hide
+            </button>
+        </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/pris_stratton/comment/1ak8i/mod" aria-label="Moderate pris stratton&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/pris_stratton/comment/1ak8i" aria-label="Report pris stratton&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/pris_stratton/comment/1ak8i" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>Ooh I have been looking for something like this for a while. Bookmarked 😎</p>
+
+
+        </div>
+
+    </div>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-646482" data-comment-id="646482" aria-label="like" data-tracking-name="comment_heart_button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="amu8sibrwbdsasiakljkgtb1xg5ow9wf" class="crayons-icon reaction-icon not-reacted"><title id="amu8sibrwbdsasiakljkgtb1xg5ow9wf">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="arn7wpjth4qfeqlo1eg1ujk5bvbtso9b" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="arn7wpjth4qfeqlo1eg1ujk5bvbtso9b">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">2</span><span class="reactions-label hidden m:inline-block">&nbsp;likes</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+      <a class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/new/1ak8i" data-comment-id="646482" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1ak8i" data-tracking-name="comment_reply_button" data-testid="reply-button-646482" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a90d10u2z5utedfif19d89qh1nkcvjcr" class="crayons-icon reaction-icon not-reacted"><title id="a90d10u2z5utedfif19d89qh1nkcvjcr">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </a>
+
+</footer>
+
+  </div>
+</div>
+    <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-1
+                    child
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="mx-0 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="aq4x4foodtzcg4dbttfitbvm3mqoanoe" class="crayons-icon expanded"><title id="aq4x4foodtzcg4dbttfitbvm3mqoanoe">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="atppdu7ckgvr0n3nykud54r6j60xzeqr" class="crayons-icon collapsed"><title id="atppdu7ckgvr0n3nykud54r6j60xzeqr">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-646513" class="
+      comment single-comment-node
+      
+      child
+      comment--deep-1
+      
+    " data-comment-id="646513" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1ak9n" data-comment-author-id="378290" data-content-user-id="378290">
+    <a name="comment-1ak9n" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/laurilllll" class="shrink-0 crayons-avatar mt-4">
+    <img class="crayons-avatar__image" width="32" height="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/11b59b59-9c72-401f-82fe-a64c33d52b25.jpg" alt="laurilllll profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/laurilllll" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">Lauri Lännenmäki</span>
+      <span class="crayons-hover-tooltip inline-block spec-op-author -mr-2" data-tooltip="Author">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" class="crayons-icon">
+    <path d="M12 8.25a6 6 0 110 12 6 6 0 010-12zm0 2.625l-.992 2.01-2.218.322 1.605 1.564-.379 2.21L12 15.937l1.984 1.043-.379-2.209 1.605-1.564-2.218-.323L12 10.875zm.75-6.376l3.75.001v2.25l-1.022.854a7.45 7.45 0 00-2.728-.817V4.5zm-1.5 0v2.288a7.451 7.451 0 00-2.727.816L7.5 6.75V4.5h3.75z"></path>
+</svg>
+
+      </span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-646513" aria-controls="comment-profile-preview-content-646513" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="Lauri Lännenmäki profile details" aria-expanded="false" aria-haspopup="true" data-initialized="true">
+      Lauri Lännenmäki
+    </button>
+    <div id="comment-profile-preview-content-646513" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #000000; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/laurilllll" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/11b59b59-9c72-401f-82fe-a64c33d52b25(1).jpg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">Lauri Lännenmäki</span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:378290,&quot;name&quot;:&quot;Lauri Lännenmäki&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: Lauri Lännenmäki" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    🔥 UX Engineer // Working @FraktioHQ // Co-Founder of IVALO.COM
+
+💪  I teach about CSS, Design Systems and Figma with over a decade of experience in the industry.
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+        <li>
+          <div class="key">
+            Location
+          </div>
+          <div class="value">
+            Helsinki, Finland
+          </div>
+        </li>
+          <li>
+            <div class="key">
+              Education
+            </div>
+            <div class="value">
+              Engineer
+            </div>
+          </li>
+          <li>
+            <div class="key">
+              Work
+            </div>
+            <div class="value">
+              UX Engineer
+            </div>
+          </li>
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2020-05-02T20:15:05Z" class="date" title="Sunday, May 3, 2020 at 4:15:05 AM">May 3, 2020</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+      <span class="crayons-hover-tooltip inline-block spec-op-author -ml-2" data-tooltip="Author">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" class="crayons-icon">
+    <path d="M12 8.25a6 6 0 110 12 6 6 0 010-12zm0 2.625l-.992 2.01-2.218.322 1.605 1.564-.379 2.21L12 15.937l1.984 1.043-.379-2.209 1.605-1.564-2.218-.323L12 10.875zm.75-6.376l3.75.001v2.25l-1.022.854a7.45 7.45 0 00-2.728-.817V4.5zm-1.5 0v2.288a7.451 7.451 0 00-2.727.816L7.5 6.75V4.5h3.75z"></path>
+</svg>
+
+      </span>
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1ak9n" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2021-01-21T10:05:01Z" class="date-short-year" title="Thursday, January 21, 2021 at 6:05:01 PM">Jan 21 '21</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-646513" aria-controls="comment-dropdown-646513" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="artn1sxp2260oyn1f4f68d1f6zami957" class="crayons-icon pointer-events-none"><title id="artn1sxp2260oyn1f4f68d1f6zami957">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-646513" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1ak9n" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to Lauri Lännenmäki&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="378290" data-action="settings-button" data-path="https://dev.to/laurilllll/comment/1ak9n/settings" aria-label="Go to Lauri Lännenmäki&#39;s comment settings"></li>
+        <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="378290" data-user-id="378290">
+            <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="646513" data-comment-url="https://dev.to/laurilllll/comment/1ak9n" aria-label="Hide Lauri Lännenmäki&#39;s comment">
+              Hide
+            </button>
+        </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/laurilllll/comment/1ak9n/mod" aria-label="Moderate Lauri Lännenmäki&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/laurilllll/comment/1ak9n" aria-label="Report Lauri Lännenmäki&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/laurilllll/comment/1ak9n" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>That's awesome! I'm glad that I could help you.</p>
+
+
+        </div>
+
+    </div>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-646513" data-comment-id="646513" aria-label="like" data-tracking-name="comment_heart_button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ar05o1j9msyj58bjbl439079q8cqueol" class="crayons-icon reaction-icon not-reacted"><title id="ar05o1j9msyj58bjbl439079q8cqueol">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="aumlr5elbsdoq9e4to2yenwls4bar9z" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="aumlr5elbsdoq9e4to2yenwls4bar9z">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">1</span><span class="reactions-label hidden m:inline-block">&nbsp;like</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+      <a class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/new/1ak9n" data-comment-id="646513" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1ak9n" data-tracking-name="comment_reply_button" data-testid="reply-button-646513" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a4q86jmf53vkzqrnjjg9i1mp1ntmedk" class="crayons-icon reaction-icon not-reacted"><title id="a4q86jmf53vkzqrnjjg9i1mp1ntmedk">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </a>
+
+</footer>
+
+  </div>
+</div>
+
+
+  </div>
+    </details>
+
+
+  </div>
+    </details>
+
+    <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-0
+                    root
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="m:mx-1 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="anrsrpsazqiqdhyojazvt3dklrq6e3ep" class="crayons-icon expanded"><title id="anrsrpsazqiqdhyojazvt3dklrq6e3ep">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="amt1mt9321b3mteb2u4kqb4j0qki1tcp" class="crayons-icon collapsed"><title id="amt1mt9321b3mteb2u4kqb4j0qki1tcp">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-675278" class="
+      comment single-comment-node
+      
+      root
+      comment--deep-0
+      
+    " data-comment-id="675278" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1cao6" data-comment-author-id="215808" data-content-user-id="215808">
+    <a name="comment-1cao6" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/joshtom" class="shrink-0 crayons-avatar m:crayons-avatar--l mt-4 m:mt-3">
+    <img class="crayons-avatar__image" width="32" height="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/c85a144a-96f8-4250-ba00-ebc4eef9788c.jpg" alt="joshtom profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/joshtom" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">Joshua Olajide</span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-675278" aria-controls="comment-profile-preview-content-675278" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="Joshua Olajide profile details" aria-expanded="false" aria-haspopup="true" data-initialized="true">
+      Joshua Olajide
+    </button>
+    <div id="comment-profile-preview-content-675278" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #870909; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/joshtom" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/c85a144a-96f8-4250-ba00-ebc4eef9788c(1).jpg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">Joshua Olajide</span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:215808,&quot;name&quot;:&quot;Joshua Olajide&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: Joshua Olajide" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    Frontend Engineer
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+        <li>
+          <div class="key">
+            Email
+          </div>
+          <div class="value">
+            <a href="mailto:joshuaolarjide@gmail.com">joshuaolarjide@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <div class="key">
+            Location
+          </div>
+          <div class="value">
+            Nigeria
+          </div>
+        </li>
+          <li>
+            <div class="key">
+              Work
+            </div>
+            <div class="value">
+              Currently with ARM Groups
+            </div>
+          </li>
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2019-08-20T23:18:40Z" class="date" title="Wednesday, August 21, 2019 at 7:18:40 AM">Aug 21, 2019</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1cao6" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2021-03-11T14:51:02Z" class="date-short-year" title="Thursday, March 11, 2021 at 10:51:02 PM">Mar 11 '21</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-675278" aria-controls="comment-dropdown-675278" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="acbyzq44tudc97gst38l44xyrmhjr6yx" class="crayons-icon pointer-events-none"><title id="acbyzq44tudc97gst38l44xyrmhjr6yx">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-675278" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1cao6" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to Joshua Olajide&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="215808" data-action="settings-button" data-path="https://dev.to/joshtom/comment/1cao6/settings" aria-label="Go to Joshua Olajide&#39;s comment settings"></li>
+        <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="378290" data-user-id="215808">
+            <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="675278" data-comment-url="https://dev.to/joshtom/comment/1cao6" aria-label="Hide Joshua Olajide&#39;s comment">
+              Hide
+            </button>
+        </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/joshtom/comment/1cao6/mod" aria-label="Moderate Joshua Olajide&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/joshtom/comment/1cao6" aria-label="Report Joshua Olajide&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/joshtom/comment/1cao6" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>Best read so far this year. Thanks for writing this!</p>
+
+
+        </div>
+
+    </div>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-675278" data-comment-id="675278" aria-label="like" data-tracking-name="comment_heart_button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="aawwvcqjvjpdv8bjydruxsw32ov6byy0" class="crayons-icon reaction-icon not-reacted"><title id="aawwvcqjvjpdv8bjydruxsw32ov6byy0">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="as3pr1uxra18z70nnuym1138ryg2h9oa" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="as3pr1uxra18z70nnuym1138ryg2h9oa">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">1</span><span class="reactions-label hidden m:inline-block">&nbsp;like</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+      <a class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/new/1cao6" data-comment-id="675278" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1cao6" data-tracking-name="comment_reply_button" data-testid="reply-button-675278" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="aov5dh20bfwxa74fxdyqtxrmesjawj5" class="crayons-icon reaction-icon not-reacted"><title id="aov5dh20bfwxa74fxdyqtxrmesjawj5">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </a>
+
+</footer>
+
+  </div>
+</div>
+
+
+  </div>
+    </details>
+
+    <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-0
+                    root
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="m:mx-1 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a8rvdylm1bh6t13fn7e20h3gba0w7pfh" class="crayons-icon expanded"><title id="a8rvdylm1bh6t13fn7e20h3gba0w7pfh">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ard157dq34emmrphww9e20r3tc95pu5l" class="crayons-icon collapsed"><title id="ard157dq34emmrphww9e20r3tc95pu5l">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-971411" class="
+      comment single-comment-node
+      
+      root
+      comment--deep-0
+      
+    " data-comment-id="971411" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/236pp" data-comment-author-id="935758" data-content-user-id="935758">
+    <a name="comment-236pp" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/crazynomadd" class="shrink-0 crayons-avatar m:crayons-avatar--l mt-4 m:mt-3">
+    <img class="crayons-avatar__image" width="32" height="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/883b34b6-46a2-40fd-be3b-84391d500748.png" alt="crazynomadd profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/crazynomadd" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">Mohammed chaouki</span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-971411" aria-controls="comment-profile-preview-content-971411" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="Mohammed chaouki profile details" aria-expanded="false" aria-haspopup="true" data-initialized="true">
+      Mohammed chaouki
+    </button>
+    <div id="comment-profile-preview-content-971411" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #000000; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/crazynomadd" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/883b34b6-46a2-40fd-be3b-84391d500748(1).png" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">Mohammed chaouki</span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:935758,&quot;name&quot;:&quot;Mohammed chaouki&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: Mohammed chaouki" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2022-10-01T22:42:21Z" class="date" title="Sunday, October 2, 2022 at 6:42:21 AM">Oct 2, 2022</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-236pp" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2022-11-30T00:21:23Z" class="date-short-year" title="Wednesday, November 30, 2022 at 8:21:23 AM">Nov 30 '22</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-971411" aria-controls="comment-dropdown-971411" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a7sbgazgmpp9wvo8m772d03yy22qbd1u" class="crayons-icon pointer-events-none"><title id="a7sbgazgmpp9wvo8m772d03yy22qbd1u">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-971411" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-236pp" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to Mohammed chaouki&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="935758" data-action="settings-button" data-path="https://dev.to/crazynomadd/comment/236pp/settings" aria-label="Go to Mohammed chaouki&#39;s comment settings"></li>
+        <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="378290" data-user-id="935758">
+            <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="971411" data-comment-url="https://dev.to/crazynomadd/comment/236pp" aria-label="Hide Mohammed chaouki&#39;s comment">
+              Hide
+            </button>
+        </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/crazynomadd/comment/236pp/mod" aria-label="Moderate Mohammed chaouki&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/crazynomadd/comment/236pp" aria-label="Report Mohammed chaouki&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/crazynomadd/comment/236pp" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>THANK YOU ! <br>
+I love the clamp() part because i was always trying to achieve such fluid typography with calc() along the vw</p>
+
+
+        </div>
+
+    </div>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-971411" data-comment-id="971411" aria-label="like" data-tracking-name="comment_heart_button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ao07fzisl507btm6mczv7ahdbg4ix1xr" class="crayons-icon reaction-icon not-reacted"><title id="ao07fzisl507btm6mczv7ahdbg4ix1xr">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a63d1koo37ksumbpj46gqaelopqh7c4a" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="a63d1koo37ksumbpj46gqaelopqh7c4a">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">1</span><span class="reactions-label hidden m:inline-block">&nbsp;like</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+      <a class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/new/236pp" data-comment-id="971411" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/236pp" data-tracking-name="comment_reply_button" data-testid="reply-button-971411" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a13fsyi0rcy36tlc9lp90axxcar0knw3" class="crayons-icon reaction-icon not-reacted"><title id="a13fsyi0rcy36tlc9lp90axxcar0knw3">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </a>
+
+</footer>
+
+  </div>
+</div>
+
+
+  </div>
+    </details>
+
+    <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-0
+                    root
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="m:mx-1 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ar5auy14ma4prjodt5fw95sahfan5pvp" class="crayons-icon expanded"><title id="ar5auy14ma4prjodt5fw95sahfan5pvp">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a8jqflniso7pd22y3spd9g9bae621zqg" class="crayons-icon collapsed"><title id="a8jqflniso7pd22y3spd9g9bae621zqg">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-825532" class="
+      comment single-comment-node
+      
+      root
+      comment--deep-0
+      
+    " data-comment-id="825532" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1kp56" data-comment-author-id="701026" data-content-user-id="701026">
+    <a name="comment-1kp56" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/tadrib02" class="shrink-0 crayons-avatar m:crayons-avatar--l mt-4 m:mt-3">
+    <img class="crayons-avatar__image" width="32" height="32" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/a5013df2-b9b6-4bcf-a729-bbc15d02aae7.jpeg" alt="tadrib02 profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/tadrib02" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">tadrib02</span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-825532" aria-controls="comment-profile-preview-content-825532" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="tadrib02 profile details" aria-expanded="false" aria-haspopup="true" data-initialized="true">
+      tadrib02
+    </button>
+    <div id="comment-profile-preview-content-825532" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #000000; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/tadrib02" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/a5013df2-b9b6-4bcf-a729-bbc15d02aae7(1).jpeg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">tadrib02</span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:701026,&quot;name&quot;:&quot;tadrib02&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: tadrib02" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    Interested in front-end development. Want participate in an open-source project someday.
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+          <li>
+            <div class="key">
+              Education
+            </div>
+            <div class="value">
+              Gadjah Mada University
+            </div>
+          </li>
+          <li>
+            <div class="key">
+              Work
+            </div>
+            <div class="value">
+              Student
+            </div>
+          </li>
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2021-09-07T13:53:25Z" class="date" title="Tuesday, September 7, 2021 at 9:53:25 PM">Sep 7, 2021</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1kp56" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2021-12-31T14:37:05Z" class="date-short-year" title="Friday, December 31, 2021 at 10:37:05 PM">Dec 31 '21</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-825532" aria-controls="comment-dropdown-825532" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="afdzxyld38kxao9ten2e451hssnwryoy" class="crayons-icon pointer-events-none"><title id="afdzxyld38kxao9ten2e451hssnwryoy">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-825532" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#comment-1kp56" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to tadrib02&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="701026" data-action="settings-button" data-path="https://dev.to/tadrib02/comment/1kp56/settings" aria-label="Go to tadrib02&#39;s comment settings"></li>
+        <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="378290" data-user-id="701026">
+            <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="825532" data-comment-url="https://dev.to/tadrib02/comment/1kp56" aria-label="Hide tadrib02&#39;s comment">
+              Hide
+            </button>
+        </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/tadrib02/comment/1kp56/mod" aria-label="Moderate tadrib02&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/tadrib02/comment/1kp56" aria-label="Report tadrib02&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/tadrib02/comment/1kp56" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>great post, bookmarked,,</p>
+
+
+        </div>
+
+    </div>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-825532" data-comment-id="825532" aria-label="like" data-tracking-name="comment_heart_button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="aqm44obonj4yn97vgkhusaaobss2lvts" class="crayons-icon reaction-icon not-reacted"><title id="aqm44obonj4yn97vgkhusaaobss2lvts">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="am16rolos4q749k2hu9ja26wah8vr5gr" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="am16rolos4q749k2hu9ja26wah8vr5gr">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">1</span><span class="reactions-label hidden m:inline-block">&nbsp;like</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+      <a class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/new/1kp56" data-comment-id="825532" data-path="/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8/comments/1kp56" data-tracking-name="comment_reply_button" data-testid="reply-button-825532" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a14bwk7l6vq8hn6ntq1doectu28whwt2" class="crayons-icon reaction-icon not-reacted"><title id="a14bwk7l6vq8hn6ntq1doectu28whwt2">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </a>
+
+</footer>
+
+  </div>
+</div>
+
+
+  </div>
+    </details>
+
+
+        </div>
+      </div>
+
+      <div class="align-center">
+
+
+  <nav class="fs-s align-center block" aria-label="Conduct controls">
+  <a href="https://dev.to/code-of-conduct" class="crayons-link crayons-link--secondary">Code of Conduct</a>
+  <span class="opacity-25 px-2" role="presentation">•</span>
+  <a href="https://dev.to/report-abuse" class="crayons-link crayons-link--secondary">Report abuse</a>
+</nav>
+
+</div>
+
+  </section>
+  <div id="hide-comments-modal" class="hidden">
+  <form id="hide-comments-modal__form" class="hide-comments-modal__form" data-type="json" action="https://dev.to/comments/hide" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓" autocomplete="off"><input type="hidden" name="_method" value="patch" autocomplete="off"><input type="hidden" name="authenticity_token" value="OR4E8RsCx7T_qNZA9V_VBBYhUlPns634axyDY7mXy440TnXeWAXKbyUgIcPCLyZvpY3YaKq7pZKUwH9wgD2Wmw" autocomplete="off">
+    <div class="hide-comments-modal__content">
+      <p class="pb-2">
+        Are you sure you want to hide this comment? It will become hidden in your post, but will still be visible via the comment's <a id="hide-comments-modal__comment-permalink" href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#">permalink</a>.
+      </p>
+      <label class="crayons-field crayons-field--checkbox my-2">
+        <input name="hide_children" type="hidden" value="0" autocomplete="off"><input class="hide_children crayons-checkbox" type="checkbox" value="1" name="hide_children" id="hide_children">
+        <p class="crayons-field__label">Hide child comments as well</p>
+      </label>
+      <p class="pb-4 pt-2">
+        <button type="submit" class="crayons-btn">
+          Confirm
+        </button>
+      </p>
+    </div>
+</form>  <p class="fs-s color-base-60">For further actions, you may consider blocking this person and/or <a id="hide-comments-modal__report-link" href="https://dev.to/report-abuse">reporting abuse</a></p>
+</div>
+
+
+
+      </article>
+
+          <div class="pb-4 crayons-layout__comments-display-ad">
+            <div class="crayons-card crayons-card--secondary crayons-sponsorship" data-display-unit="" data-id="449" data-category-click="click" data-category-impression="impression" data-context-type="article" data-type-of="in_house">
+  <div class="crayons-sponsorship__header relative">
+      <div class="crayons-sponsorship__title">DEV Community</div>
+
+    <button id="sponsorship-dropdown-trigger-449" aria-controls="sponsorship-dropdown-449" aria-expanded="false" aria-haspopup="true" class="dropBtn crayons-sponsorship__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon" aria-label="Toggle dropdown menu" data-initialized="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ajtpddefiv6myilgwu2uojnmf037kpb4" class="crayons-icon pointer-events-none"><title id="ajtpddefiv6myilgwu2uojnmf037kpb4">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+
+    <div id="sponsorship-dropdown-449" class="crayons-dropdown right-0">
+      <ul class="list-none m-0">
+          <li>
+            <a class="crayons-link crayons-link--block" href="https://dev.to/billboards">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"></path>
+</svg>
+
+              What's a billboard?
+            </a>
+          </li>
+        <li>
+          <a class="crayons-link crayons-link--block" href="https://dev.to/settings/customization#sponsors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M3.34 16.9999C2.91727 16.2689 2.58866 15.4874 2.362 14.6739C2.85531 14.423 3.26959 14.0406 3.55903 13.5688C3.84846 13.0971 4.00176 12.5545 4.00197 12.0011C4.00218 11.4476 3.84928 10.9049 3.5602 10.4329C3.27112 9.961 2.85712 9.57821 2.364 9.32694C2.81604 7.69243 3.67673 6.1999 4.865 4.98994C5.32909 5.29167 5.86762 5.45911 6.42098 5.47373C6.97434 5.48834 7.52095 5.34958 8.00033 5.07278C8.47971 4.79598 8.87315 4.39194 9.13713 3.90539C9.4011 3.41883 9.52531 2.86872 9.496 2.31594C11.1381 1.89157 12.8612 1.89226 14.503 2.31795C14.474 2.87071 14.5984 3.42073 14.8626 3.90715C15.1268 4.39357 15.5204 4.79742 15.9998 5.07401C16.4793 5.35059 17.0259 5.48913 17.5793 5.4743C18.1326 5.45946 18.671 5.29183 19.135 4.98994C19.714 5.57994 20.228 6.25095 20.66 6.99995C21.093 7.74895 21.417 8.52995 21.638 9.32595C21.1447 9.57685 20.7304 9.95932 20.441 10.4311C20.1515 10.9028 19.9982 11.4454 19.998 11.9988C19.9978 12.5523 20.1507 13.095 20.4398 13.5669C20.7289 14.0389 21.1429 14.4217 21.636 14.6729C21.184 16.3075 20.3233 17.8 19.135 19.0099C18.6709 18.7082 18.1324 18.5408 17.579 18.5262C17.0257 18.5115 16.479 18.6503 15.9997 18.9271C15.5203 19.2039 15.1268 19.6079 14.8629 20.0945C14.5989 20.5811 14.4747 21.1312 14.504 21.6839C12.8619 22.1083 11.1388 22.1076 9.497 21.6819C9.52605 21.1292 9.4016 20.5792 9.13742 20.0927C8.87324 19.6063 8.47964 19.2025 8.00017 18.9259C7.5207 18.6493 6.97405 18.5108 6.42073 18.5256C5.8674 18.5404 5.32896 18.7081 4.865 19.0099C4.27399 18.4069 3.76159 17.7315 3.34 16.9999ZM9 17.1959C10.0656 17.8106 10.8668 18.797 11.25 19.9659C11.749 20.0129 12.25 20.0139 12.749 19.9669C13.1324 18.7978 13.934 17.8114 15 17.1969C16.0652 16.5806 17.3205 16.3794 18.525 16.6319C18.815 16.2239 19.065 15.7889 19.273 15.3339C18.4524 14.4174 17.9991 13.2302 18 11.9999C18 10.7399 18.47 9.56295 19.273 8.66595C19.0635 8.21109 18.8125 7.77658 18.523 7.36795C17.3193 7.62025 16.0648 7.41942 15 6.80395C13.9344 6.18932 13.1332 5.20293 12.75 4.03394C12.251 3.98694 11.75 3.98594 11.251 4.03294C10.8676 5.20209 10.066 6.1885 9 6.80295C7.93478 7.41926 6.67948 7.62046 5.475 7.36795C5.18556 7.77623 4.93513 8.21081 4.727 8.66595C5.54757 9.5825 6.00088 10.7697 6 11.9999C6 13.2599 5.53 14.4369 4.727 15.3339C4.93647 15.7888 5.18754 16.2233 5.477 16.6319C6.68072 16.3796 7.93521 16.5805 9 17.1959ZM12 14.9999C11.2044 14.9999 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 11.9999C9 11.2043 9.31607 10.4412 9.87868 9.87862C10.4413 9.31602 11.2044 8.99995 12 8.99995C12.7956 8.99995 13.5587 9.31602 14.1213 9.87862C14.6839 10.4412 15 11.2043 15 11.9999C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 14.9999 12 14.9999ZM12 12.9999C12.2652 12.9999 12.5196 12.8946 12.7071 12.7071C12.8946 12.5195 13 12.2652 13 11.9999C13 11.7347 12.8946 11.4804 12.7071 11.2928C12.5196 11.1053 12.2652 10.9999 12 10.9999C11.7348 10.9999 11.4804 11.1053 11.2929 11.2928C11.1054 11.4804 11 11.7347 11 11.9999C11 12.2652 11.1054 12.5195 11.2929 12.7071C11.4804 12.8946 11.7348 12.9999 12 12.9999Z" fill="black"></path>
+</svg>
+
+            Manage preferences
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a class="crayons-link crayons-link--block" href="https://dev.to/report-abuse?billboard=449">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 17" fill="none" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+  <path d="M2.16667 11.3333V16.3333H0.5V0.5H8.31833C8.47305 0.500083 8.62469 0.543236 8.75627 0.624627C8.88785 0.706018 8.99417 0.822433 9.06333 0.960833L9.66667 2.16667H14.6667C14.8877 2.16667 15.0996 2.25446 15.2559 2.41074C15.4122 2.56703 15.5 2.77899 15.5 3V12.1667C15.5 12.3877 15.4122 12.5996 15.2559 12.7559C15.0996 12.9122 14.8877 13 14.6667 13H9.34833C9.19361 12.9999 9.04197 12.9568 8.91039 12.8754C8.77882 12.794 8.67249 12.6776 8.60333 12.5392L8 11.3333H2.16667ZM2.16667 2.16667V9.66667H9.03L9.86333 11.3333H13.8333V3.83333H8.63667L7.80333 2.16667H2.16667Z" fill="#404040"></path>
+</svg>
+
+            Report billboard
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-1 pt-3 text-styles text-styles--display-ad">
+    <p><strong>Timeless DEV post...</strong></p><h2>  <a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#git-concepts-i-wish-i-knew-years-ago" class="anchor">  </a>  <a href="https://dev.to/g_abud/advanced-git-reference-1o9j">Git Concepts I Wish I Knew Years Ago</a>
+</h2><p>The most used technology by developers is not Javascript.</p><p>It's not Python or HTML.</p><p>It hardly even gets mentioned in interviews or listed as a pre-requisite for jobs.</p><p><strong>I'm talking about Git and version control of course.</strong></p><p><img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/7p7qe33hhlj5zdi3bj82.jpg" alt="One does not simply learn git" width="335" height="335" loading="lazy"></p>
+  </div>
+</div>
+
+          </div>
+
+          <section class="crayons-card crayons-card--secondary text-padding mb-4 print-hidden" id="bottom-content-read-next">
+    <h2 class="crayons-subtitle-1">Read next</h2>
+      <a href="https://dev.to/alvaromontoro/css-is-dead-1i4" data-preload-image="https://res.cloudinary.com/practicaldev/image/fetch/s--Fh4W0QLw--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k5mpt6fywco99j0jbo7x.png" class="crayons-link mt-6 block">
+        <div class="flex items-center">
+          <span class="crayons-avatar crayons-avatar--xl m:crayons-avatar--2xl mr-4 shrink-0">
+              <img loading="lazy" alt="alvaromontoro profile image" class="crayons-avatar__image" width="100" height="100" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/2ff05281-db58-4dcb-946a-4b679e4a266b.jpeg">
+          </span>
+          <div>
+            <h3 class="fs-xl mb-0 lh-tight">CSS Is Dead!</h3>
+            <p class="opacity-75 pt-1">
+              Alvaro Montoro - <time datetime="2023-03-20T13:05:19Z">Mar 20</time>
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://dev.to/this-is-learning/how-to-use-chrome-devtools-to-debug-your-webpage-intro-for-beginners-b3g" data-preload-image="https://res.cloudinary.com/practicaldev/image/fetch/s--WoSQf2pv--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7k4lqviuok59a49b03ih.jpeg" class="crayons-link mt-6 block">
+        <div class="flex items-center">
+          <span class="crayons-avatar crayons-avatar--xl m:crayons-avatar--2xl mr-4 shrink-0">
+              <img loading="lazy" alt="domizajac profile image" class="crayons-avatar__image" width="100" height="100" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/6368ed44-c1a2-472e-af8e-14c92c77a445.jpg">
+          </span>
+          <div>
+            <h3 class="fs-xl mb-0 lh-tight">How to use Chrome DevTools to debug HTML/CSS on your webpage — intro for beginners</h3>
+            <p class="opacity-75 pt-1">
+              Dominika Zając (she/her) 🇵🇱 - <time datetime="2023-03-25T17:50:15Z">Mar 25</time>
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://dev.to/franklin030601/administrando-el-estado-con-react-query-2b2j" data-preload-image="https://res.cloudinary.com/practicaldev/image/fetch/s--y5rG0DnX--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7qj8puoccajjdllc8jw7.png" class="crayons-link mt-6 block">
+        <div class="flex items-center">
+          <span class="crayons-avatar crayons-avatar--xl m:crayons-avatar--2xl mr-4 shrink-0">
+              <img loading="lazy" alt="franklin030601 profile image" class="crayons-avatar__image" width="100" height="100" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/ad04d2cd-1503-4351-a014-0815c5ed2bf4.png">
+          </span>
+          <div>
+            <h3 class="fs-xl mb-0 lh-tight">Administrando el estado con React Query. 〽️</h3>
+            <p class="opacity-75 pt-1">
+              Franklin Martinez - <time datetime="2023-03-17T15:17:06Z">Mar 17</time>
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="https://dev.to/fayaz/my-last-project-i-launched-on-devto-got-acquired-heres-a-new-one-5158" data-preload-image="https://res.cloudinary.com/practicaldev/image/fetch/s--EUYYN5T1--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ppw09erybakblkboa57s.png" class="crayons-link mt-6 block">
+        <div class="flex items-center">
+          <span class="crayons-avatar crayons-avatar--xl m:crayons-avatar--2xl mr-4 shrink-0">
+              <img loading="lazy" alt="fayaz profile image" class="crayons-avatar__image" width="100" height="100" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/d43bbd91-dec9-4300-a949-41c7c52618ff.jpeg">
+          </span>
+          <div>
+            <h3 class="fs-xl mb-0 lh-tight">My last project I launched on Dev.to got acquired. Here's a new one</h3>
+            <p class="opacity-75 pt-1">
+              Fayaz Ahmed - <time datetime="2023-03-25T08:24:31Z">Mar 25</time>
+            </p>
+          </div>
+        </div>
+      </a>
+  </section>
+
+    </div>
+  </main>
+
+  <aside class="crayons-layout__sidebar-right" aria-label="Author details">
+    <div class="crayons-article-sticky grid gap-4 break-word" id="article-show-primary-sticky-nav">
+  <div class="crayons-card crayons-card--secondary branded-7 p-4 pt-0 gap-4 grid" style="border-top-color: #000000;">
+    <div class="-mt-4">
+  <a href="https://dev.to/laurilllll" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/11b59b59-9c72-401f-82fe-a64c33d52b25(1).jpg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">Lauri Lännenmäki</span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:378290,&quot;name&quot;:&quot;Lauri Lännenmäki&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: Lauri Lännenmäki" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    🔥 UX Engineer // Working @FraktioHQ // Co-Founder of IVALO.COM
+
+💪  I teach about CSS, Design Systems and Figma with over a decade of experience in the industry.
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+        <li>
+          <div class="key">
+            Location
+          </div>
+          <div class="value">
+            Helsinki, Finland
+          </div>
+        </li>
+          <li>
+            <div class="key">
+              Education
+            </div>
+            <div class="value">
+              Engineer
+            </div>
+          </li>
+          <li>
+            <div class="key">
+              Work
+            </div>
+            <div class="value">
+              UX Engineer
+            </div>
+          </li>
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2020-05-02T20:15:05Z" class="date">May 3, 2020</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  </div>
+
+      <div class="crayons-card crayons-card--secondary">
+        <header class="crayons-card__header">
+          <h3 class="crayons-subtitle-2">
+            More from <a href="https://dev.to/laurilllll">Lauri Lännenmäki</a>
+          </h3>
+        </header>
+        <div>
+            <a class="crayons-link crayons-link--contentful" href="https://dev.to/laurilllll/how-to-create-dark-mode-using-only-css-2cb4">
+              How to create Dark Mode using only CSS
+              <div class="crayons-link__secondary -ml-1">
+                  <span class="mr-1"><span class="opacity-50">#</span>css</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>design</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>tutorial</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>webdev</span>
+              </div>
+            </a>
+            <a class="crayons-link crayons-link--contentful" href="https://dev.to/laurilllll/figma-plugin-api-how-to-load-and-use-fonts-bj2">
+              Figma Plugin API: How to Load and Use Fonts
+              <div class="crayons-link__secondary -ml-1">
+                  <span class="mr-1"><span class="opacity-50">#</span>typescript</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>html</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>figma</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>plugin</span>
+              </div>
+            </a>
+        </div>
+      </div>
+</div>
+
+    <div class="crayons-article-sticky grid gap-4 break-word pt-4">
+      <div class="crayons-card crayons-card--secondary crayons-sponsorship" data-display-unit="" data-id="1125" data-category-click="click" data-category-impression="impression" data-context-type="article" data-type-of="in_house" data-impression-recorded="true">
+  <div class="crayons-sponsorship__header relative">
+      <div class="crayons-sponsorship__title">DEV Community</div>
+
+    <button id="sponsorship-dropdown-trigger-1125" aria-controls="sponsorship-dropdown-1125" aria-expanded="false" aria-haspopup="true" class="dropBtn crayons-sponsorship__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon" aria-label="Toggle dropdown menu" data-initialized="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a7qqyhtjuzz96w2weezzrglfujuu4njs" class="crayons-icon pointer-events-none"><title id="a7qqyhtjuzz96w2weezzrglfujuu4njs">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+
+    <div id="sponsorship-dropdown-1125" class="crayons-dropdown right-0">
+      <ul class="list-none m-0">
+          <li>
+            <a class="crayons-link crayons-link--block" href="https://dev.to/billboards">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"></path>
+</svg>
+
+              What's a billboard?
+            </a>
+          </li>
+        <li>
+          <a class="crayons-link crayons-link--block" href="https://dev.to/settings/customization#sponsors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M3.34 16.9999C2.91727 16.2689 2.58866 15.4874 2.362 14.6739C2.85531 14.423 3.26959 14.0406 3.55903 13.5688C3.84846 13.0971 4.00176 12.5545 4.00197 12.0011C4.00218 11.4476 3.84928 10.9049 3.5602 10.4329C3.27112 9.961 2.85712 9.57821 2.364 9.32694C2.81604 7.69243 3.67673 6.1999 4.865 4.98994C5.32909 5.29167 5.86762 5.45911 6.42098 5.47373C6.97434 5.48834 7.52095 5.34958 8.00033 5.07278C8.47971 4.79598 8.87315 4.39194 9.13713 3.90539C9.4011 3.41883 9.52531 2.86872 9.496 2.31594C11.1381 1.89157 12.8612 1.89226 14.503 2.31795C14.474 2.87071 14.5984 3.42073 14.8626 3.90715C15.1268 4.39357 15.5204 4.79742 15.9998 5.07401C16.4793 5.35059 17.0259 5.48913 17.5793 5.4743C18.1326 5.45946 18.671 5.29183 19.135 4.98994C19.714 5.57994 20.228 6.25095 20.66 6.99995C21.093 7.74895 21.417 8.52995 21.638 9.32595C21.1447 9.57685 20.7304 9.95932 20.441 10.4311C20.1515 10.9028 19.9982 11.4454 19.998 11.9988C19.9978 12.5523 20.1507 13.095 20.4398 13.5669C20.7289 14.0389 21.1429 14.4217 21.636 14.6729C21.184 16.3075 20.3233 17.8 19.135 19.0099C18.6709 18.7082 18.1324 18.5408 17.579 18.5262C17.0257 18.5115 16.479 18.6503 15.9997 18.9271C15.5203 19.2039 15.1268 19.6079 14.8629 20.0945C14.5989 20.5811 14.4747 21.1312 14.504 21.6839C12.8619 22.1083 11.1388 22.1076 9.497 21.6819C9.52605 21.1292 9.4016 20.5792 9.13742 20.0927C8.87324 19.6063 8.47964 19.2025 8.00017 18.9259C7.5207 18.6493 6.97405 18.5108 6.42073 18.5256C5.8674 18.5404 5.32896 18.7081 4.865 19.0099C4.27399 18.4069 3.76159 17.7315 3.34 16.9999ZM9 17.1959C10.0656 17.8106 10.8668 18.797 11.25 19.9659C11.749 20.0129 12.25 20.0139 12.749 19.9669C13.1324 18.7978 13.934 17.8114 15 17.1969C16.0652 16.5806 17.3205 16.3794 18.525 16.6319C18.815 16.2239 19.065 15.7889 19.273 15.3339C18.4524 14.4174 17.9991 13.2302 18 11.9999C18 10.7399 18.47 9.56295 19.273 8.66595C19.0635 8.21109 18.8125 7.77658 18.523 7.36795C17.3193 7.62025 16.0648 7.41942 15 6.80395C13.9344 6.18932 13.1332 5.20293 12.75 4.03394C12.251 3.98694 11.75 3.98594 11.251 4.03294C10.8676 5.20209 10.066 6.1885 9 6.80295C7.93478 7.41926 6.67948 7.62046 5.475 7.36795C5.18556 7.77623 4.93513 8.21081 4.727 8.66595C5.54757 9.5825 6.00088 10.7697 6 11.9999C6 13.2599 5.53 14.4369 4.727 15.3339C4.93647 15.7888 5.18754 16.2233 5.477 16.6319C6.68072 16.3796 7.93521 16.5805 9 17.1959ZM12 14.9999C11.2044 14.9999 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 11.9999C9 11.2043 9.31607 10.4412 9.87868 9.87862C10.4413 9.31602 11.2044 8.99995 12 8.99995C12.7956 8.99995 13.5587 9.31602 14.1213 9.87862C14.6839 10.4412 15 11.2043 15 11.9999C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 14.9999 12 14.9999ZM12 12.9999C12.2652 12.9999 12.5196 12.8946 12.7071 12.7071C12.8946 12.5195 13 12.2652 13 11.9999C13 11.7347 12.8946 11.4804 12.7071 11.2928C12.5196 11.1053 12.2652 10.9999 12 10.9999C11.7348 10.9999 11.4804 11.1053 11.2929 11.2928C11.1054 11.4804 11 11.7347 11 11.9999C11 12.2652 11.1054 12.5195 11.2929 12.7071C11.4804 12.8946 11.7348 12.9999 12 12.9999Z" fill="black"></path>
+</svg>
+
+            Manage preferences
+          </a>
+        </li>
+        <hr>
+        <li>
+          <a class="crayons-link crayons-link--block" href="https://dev.to/report-abuse?billboard=1125">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 17" fill="none" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+  <path d="M2.16667 11.3333V16.3333H0.5V0.5H8.31833C8.47305 0.500083 8.62469 0.543236 8.75627 0.624627C8.88785 0.706018 8.99417 0.822433 9.06333 0.960833L9.66667 2.16667H14.6667C14.8877 2.16667 15.0996 2.25446 15.2559 2.41074C15.4122 2.56703 15.5 2.77899 15.5 3V12.1667C15.5 12.3877 15.4122 12.5996 15.2559 12.7559C15.0996 12.9122 14.8877 13 14.6667 13H9.34833C9.19361 12.9999 9.04197 12.9568 8.91039 12.8754C8.77882 12.794 8.67249 12.6776 8.60333 12.5392L8 11.3333H2.16667ZM2.16667 2.16667V9.66667H9.03L9.86333 11.3333H13.8333V3.83333H8.63667L7.80333 2.16667H2.16667Z" fill="#404040"></path>
+</svg>
+
+            Report billboard
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-1 pt-3 text-styles text-styles--display-ad">
+    <p><a href="https://dev.to/shaggyrec/run-a-golang-nginx-and-react-app-in-docker-59kn"><img src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/cj6qer31vam7sodkwfpg.png" alt="Run a Golang, Nginx, and React App in Docker cover image" height="569" width="1024" loading="lazy"></a></p><h2>  <a href="https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8#run-a-golang-nginx-and-react-app-in-docker" class="anchor">  </a>  <a href="https://dev.to/shaggyrec/run-a-golang-nginx-and-react-app-in-docker-59kn">Run a Golang, Nginx, and React App in Docker</a>
+</h2><p>This guide shows how to run a Golang, Nginx, and React app using Docker to avoid compatibility issues. It covers setting up the environment, building a Golang API, setting up an Nginx server, and creating a React app.</p><p><strong><a href="https://dev.to/shaggyrec/run-a-golang-nginx-and-react-app-in-docker-59kn">Read full post</a></strong></p>
+  </div>
+</div>
+
+    </div>
+
+  </aside>
+</div>
+
+
+<div class="mod-actions-menu print-hidden"></div>
+<div data-testid="unpublish-post-modal-container" class="unpublish-post-modal-container hidden"></div>
+<div id="suspend-modal-content" class="hidden">
+  <p>
+    Once suspended, laurilllll will not be able to comment or publish posts until their suspension is removed.
+  </p>
+
+  <div class="crayons-field mt-4">
+    <label for="suspend-reason-userid-378290" class="crayons-field__label">
+      Note:
+    </label>
+    <textarea id="suspend-reason-userid-378290" rows="4" cols="70" placeholder="Reason for suspension" class="crayons-textfield" aria-describedby="suspension-reason-error" required=""></textarea>
+    <p id="suspension-reason-error" data-testid="suspension-reason-error" class="suspend-reason-error crayons-field__description" style="color: red;" aria-live="assertive">
+    </p>
+  </div>
+  <div class="mt-4">
+    <button id="submit-user-suspend-btn" class="c-btn c-btn--primary c-btn--destructive" data-btn-action="suspend" data-reason-selector="#suspend-reason-userid-378290" data-user-id="378290" data-username="laurilllll">
+      Submit &amp; Suspend
+    </button>
+  </div>
+</div>
+
+<div id="unsuspend-modal-content" class="hidden">
+  <p>
+    Once unsuspended, laurilllll will be able to comment and publish posts again.
+  </p>
+
+  <div class="crayons-field mt-4">
+    <label for="unsuspend-reason-userid-378290" class="crayons-field__label">
+      Note:
+    </label>
+    <textarea id="unsuspend-reason-userid-378290" rows="4" cols="70" placeholder="Reason for unsuspension" class="crayons-textfield" aria-describedby="unsuspension-reason-error" required=""></textarea>
+    <p id="unsuspension-reason-error" data-testid="unsuspension-reason-error" class="unsuspend-reason-error crayons-field__description" style="color: red;" aria-live="assertive">
+    </p>
+  </div>
+  <div class="mt-4">
+    <button id="submit-user-unsuspend-btn" class="c-btn c-btn--primary" data-btn-action="unsuspend" data-reason-selector="#unsuspend-reason-userid-378290" data-user-id="378290" data-username="laurilllll">
+      Submit &amp; Unsuspend
+    </button>
+  </div>
+</div>
+
+<div id="unpublish-all-posts" class="hidden">
+  <p>
+    Once unpublished, all posts by laurilllll will become hidden and only accessible to themselves.
+  </p>
+  <p class="mt-2">
+    If laurilllll is not suspended, they can still re-publish their posts from their dashboard.
+  </p>
+  <p class="mt-2"><label for="note_content">Note:</label><textarea name="note[content]" id="note_content" class="crayons-textfield note_content" placeholder="Note text"></textarea></p>
+  <div class="mt-4">
+    <button id="unpublish-all-posts-submit-btn" class="c-btn c-btn--destructive c-btn--primary" data-user-id="378290">
+      Unpublish all posts
+    </button>
+  </div>
+</div>
+
+<div id="unpublish-post-modal" class="hidden">
+  <p>
+    Once unpublished, this post will become invisible to the public and only accessible to Lauri Lännenmäki.
+  </p>
+  <p>They can still re-publish the post if they are not suspended.</p>
+  <div class="mt-4">
+    <button destructive="" variant="primary" class="c-btn c-btn--primary c-btn--destructive" id="confirm-unpublish-post-action">
+      Unpublish Post
+    </button>
+  </div>
+</div>
+
+<div id="flag-user-modal-content" class="hidden">
+  <p>
+    Thanks for keeping DEV Community safe. Here is what you can do to flag laurilllll:
+  </p>
+
+  <div class="crayons-field crayons-field--radio mt-4">
+    <input type="radio" id="flag-user-radio-input" name="flag-user-radio-input" class="crayons-radio" data-reactable-id="378290" data-category="vomit" data-reactable-type="User">
+    <label for="flag-user-radio-input" class="crayons-field__label">
+      Make all posts by laurilllll less visible
+      <p class="crayons-field__description">
+        laurilllll consistently posts content that violates DEV Community's
+        code of conduct because it is harassing, offensive or spammy.
+      </p>
+    </label>
+  </div>
+
+  <div class="mt-4">
+    <a href="javascript:void(0);" id="report-inappropriate-content" data-report-abuse-link="/report-abuse?url=https://dev.to/laurilllll/how-to-create-responsive-typography-using-css-three-different-methods-explained-50f8">
+      Report other inappropriate conduct
+    </a>
+  </div>
+
+  <div class="mt-6">
+    <p id="unselected-radio-error" data-testid="unselected-radio-error" class="crayons-field__description mb-4" style="color: red;" aria-live="assertive">
+    </p>
+    <button id="confirm-flag-user-action" class="c-btn c-btn--primary c-btn--destructive" data-category="vomit" data-reactable-type="User" data-user-id="378290" data-username="laurilllll">
+      Confirm Flag
+    </button>
+  </div>
+</div>
+
+<div id="unflag-user-modal-content" class="hidden">
+  <p>
+    Unflagging laurilllll will restore default visibility to their posts.
+  </p>
+
+  <div class="mt-6">
+    <button id="confirm-unflag-user-action" class="c-btn c-btn--primary" data-category="vomit" data-reactable-type="User" data-user-id="378290" data-username="laurilllll">
+      Confirm Unflag
+    </button>
+  </div>
+</div>
+
+
+<div class="fullscreen-code js-fullscreen-code"></div>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_followButtons-21ca5b0e2b6aff873fbe.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/6-b93c1529963bca9369db.chunk.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/followButtons-448c1889f25400709ab9.chunk.js" defer="defer"></script>
+
+  <script>
+    var waitingOnPodcast = setInterval(function() {
+  if (typeof initializePodcastPlayback !== 'undefined') {
+    initializePodcastPlayback();
+    clearInterval(waitingOnPodcast);
+  }
+}, 1);
+
+    if (document.head.querySelector('meta[name="user-signed-in"][content="true"]')) {
+  function displayPollResults(json) {
+    var totalVotes = json.voting_data.votes_count;
+    json.voting_data.votes_distribution.forEach(function(point) {
+      var pollOptionItem = document.getElementById('poll_option_list_item_'+point[0]);
+      var optionText = document.getElementById('poll_option_label_'+point[0]).textContent;
+      if (json.user_vote_poll_option_id === point[0]) {
+        var votedClass = 'optionvotedfor'
+      } else {
+        var votedClass = 'optionnotvotedfor'
+      }
+      if (totalVotes === 0) {
+        var percent = 0;
+      } else {
+        var percent = (point[1]/totalVotes)*100;
+      }
+      var roundedPercent = Math.round( percent * 10 ) / 10
+      var percentFromRight = (100-roundedPercent)
+      var html = '<span><span class="ltag-votepercent ltag-'+votedClass+'" style="right:'+percentFromRight+'%"></span>        <span class="ltag-votepercenttext">'+optionText+' — '+roundedPercent+'%</span></span>';
+      pollOptionItem.innerHTML = html;
+      pollOptionItem.classList.add('already-voted')
+      document.getElementById('showmethemoney-'+json.poll_id).innerHTML = '<span class="ltag-voting-results-count">'+totalVotes+' total votes</span>';
+    })
+  }
+
+  var polls = document.getElementsByClassName('ltag-poll');
+  for (var i = 0; i < polls.length; i += 1) {
+    var poll = polls[i]
+    var pollId = poll.dataset.pollId
+    window.fetch('/poll_votes/'+pollId)
+    .then(function(response){
+      response.json().then(
+        function(json) {
+          if (json.voted) {
+            displayPollResults(json)
+          } else {
+            var els = document.getElementById('poll_'+json.poll_id).getElementsByClassName('ltag-polloption');
+
+            for (i = 0; i < els.length; i += 1) {
+              els[i].addEventListener('click', function(e) {
+                var tokenMeta = document.querySelector("meta[name='csrf-token']")
+                if (!tokenMeta) {
+                  alert('Whoops. There was an error. Your vote was not counted. Try refreshing the page.')
+                  return
+                }
+                var csrfToken = tokenMeta.getAttribute('content')
+                var optionId = e.target.dataset.optionId
+                window.fetch('/poll_votes', {
+                  method: 'POST',
+                  headers: {
+                    'X-CSRF-Token': csrfToken,
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({poll_vote: { poll_option_id: optionId } }),
+                  credentials: 'same-origin',
+                }).then(function(response){
+                  response.json().then(function(j){displayPollResults(j)})
+                })
+              });
+            }
+
+            document.getElementById('showmethemoney-'+json.poll_id).addEventListener('click', function() {
+              pollId = this.dataset.pollId
+              window.fetch('/poll_skips', {
+                method: 'POST',
+                headers: {
+                  'X-CSRF-Token': csrfToken,
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({poll_skip: {poll_id: pollId }}),
+                credentials: 'same-origin',
+              }).then(function(response){
+                response.json().then(function(j){displayPollResults(j)})
+              })
+            });
+          }
+        }
+      )
+    })
+  }
+} else {
+    var els = document.getElementsByClassName('ltag-poll')
+    for (i = 0; i < els.length; i += 1) {
+      els[i].onclick = function(e) {
+        if (typeof showLoginModal !== "undefined") {
+          showLoginModal();
+        }
+      }
+    }
+}
+
+    function activateRunkitTags() {
+  if (!areAnyRunkitTagsPresent())
+    return
+
+  var checkRunkit = setInterval(function() {
+    try {
+      dynamicallyLoadRunkitLibrary()
+
+      if (typeof(RunKit) === 'undefined') {
+        return
+      }
+
+      replaceTagContentsWithRunkitWidget()
+      clearInterval(checkRunkit);
+    } catch(e) {
+      console.error(e);
+      clearInterval(checkRunkit);
+    }
+  }, 200);
+}
+
+function isRunkitTagAlreadyActive(runkitTag) {
+  return runkitTag.querySelector("iframe") !== null;
+};
+
+function areAnyRunkitTagsPresent() {
+  var presentRunkitTags = document.getElementsByClassName("runkit-element");
+
+  return presentRunkitTags.length > 0
+}
+
+function replaceTagContentsWithRunkitWidget() {
+  var targets = document.getElementsByClassName("runkit-element");
+  for (var i = 0; i < targets.length; i++) {
+    if (isRunkitTagAlreadyActive(targets[i])) {
+      continue;
+    }
+
+    var wrapperContent = targets[i].textContent;
+    if (/^(<iframe src)/.test(wrapperContent) === false) {
+      if (targets[i].children.length > 0) {
+        var preamble = targets[i].children[0].textContent;
+        var content = targets[i].children[1].textContent;
+        targets[i].innerHTML = "";
+        var notebook = RunKit.createNotebook({
+          element: targets[i],
+          source: content,
+          preamble: preamble
+        });
+      }
+    }
+  }
+};
+
+function dynamicallyLoadRunkitLibrary() {
+  if (typeof(dynamicallyLoadScript) === "undefined")
+    return
+
+  dynamicallyLoadScript("//embed.runkit.com")
+}
+
+activateRunkitTags();
+
+    var videoPreviews = document.getElementsByClassName("ltag__twitter-tweet__media__video-wrapper");
+[].forEach.call(videoPreviews, function(el) {
+  el.onclick = function(e) {
+    var divHeight = el.offsetHeight;
+    el.style.maxHeight = divHeight + "px";
+    el.getElementsByClassName("ltag__twitter-tweet__media--video-preview")[0].style.display = "none";
+    el.getElementsByClassName("ltag__twitter-tweet__video")[0].style.display = "block";
+    el.getElementsByTagName("video")[0].play();
+  }
+});
+var tweets = document.getElementsByClassName("ltag__twitter-tweet__main");
+[].forEach.call(tweets, function(tweet){
+  tweet.onclick = function(e) {
+    if (e.target.nodeName == "A" || e.target.parentElement.nodeName == "A") {
+      return;
+    }
+    window.open(tweet.dataset.url,"_blank");
+  }
+});
+
+  </script>
+
+    
+  </div>
+</div>
+    
+<footer class="crayons-footer print-hidden">
+  <div id="footer-container" class="crayons-footer__container">
+    <p class="fs-s crayons-footer__description">
+      <a class="c-link c-link--branded fw-medium" aria-label="DEV Community Home" href="https://dev.to/">DEV Community</a> — A constructive and inclusive social network for software developers. With you every step of your journey.
+    </p>
+
+    <ul class="footer__nav-links flex gap-2 justify-center flex-wrap fs-s p-0" style="">
+        <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/">
+      Home
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/listings">
+      Listings
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/pod">
+      Podcasts
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/videos">
+      Videos
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/tags">
+      Tags
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/faq">
+      FAQ
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://shop.forem.com/">
+      Forem Shop
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/sponsorships">
+      Sponsors
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/about">
+      About
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/contact">
+      Contact
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/guides">
+      Guides
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/software-comparisons">
+      Software comparisons
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+
+    </ul>
+
+    <ul class="footer__nav-links flex gap-2 justify-center flex-wrap fs-s p-0" style="">
+        <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/code-of-conduct">
+      Code of Conduct
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/privacy">
+      Privacy Policy
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/terms">
+      Terms of use
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+
+    </ul>
+
+    <div class="fs-s">
+      <p>Built on <a class="c-link c-link--branded" target="_blank" rel="noopener" href="https://www.forem.com/">Forem</a> — the <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/t/opensource">open source</a> software that powers <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/">DEV</a> and other inclusive communities.</p>
+      <p>Made with love and <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community <span title="copyright">©</span> 2016 - 2023.</p>
+    </div>
+  </div>
+</footer>
+<div id="snack-zone"><div class="hidden"></div></div>
+
+    <div id="global-signup-modal" class="authentication-modal hidden">
+  <div class="authentication-modal__container">
+    <figure class="authentication-modal__image-container">
+      <img class="authentication-modal__image" src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/devlogo-pwa-512(1).png" alt="DEV Community" loading="lazy">
+    </figure>
+    <div class="authentication-modal__content">
+      <p class="authentication-modal__description">
+          We're a place where coders share, stay up-to-date and grow their careers.
+      </p>
+    </div>
+    <div class="authentication-modal__actions">
+      <a href="https://dev.to/enter" class="crayons-btn" aria-label="Log in" data-no-instant="">
+        Log in
+      </a>
+      <a href="https://dev.to/enter?state=new-user" class="crayons-btn crayons-btn--ghost-brand js-global-signup-modal__create-account" aria-label="Create new account" data-no-instant="">
+        Create account
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/runtime_signupModalShortcuts-8a3b5a8c6f385ee015c7.js" defer="defer"></script>
+<script src="./How to create responsive typography using CSS — Three different methods explained - DEV Community_files/signupModalShortcuts-2dddc32e8d7c371bb8ab.chunk.js" defer="defer"></script>
+
+  <div id="i18n-translations" data-translations="{&quot;en&quot;:{&quot;core&quot;:{&quot;add_comment&quot;:&quot;Add comment&quot;,&quot;beta&quot;:&quot;beta&quot;,&quot;comment&quot;:&quot;Comment&quot;,&quot;copy_link&quot;:&quot;Copy link&quot;,&quot;edit_profile&quot;:&quot;Edit profile&quot;,&quot;follow&quot;:&quot;Follow&quot;,&quot;follow_back&quot;:&quot;Follow back&quot;,&quot;following&quot;:&quot;Following&quot;,&quot;like&quot;:&quot;Like&quot;,&quot;loading&quot;:&quot;loading...&quot;,&quot;reaction&quot;:&quot;Reaction&quot;,&quot;report_abuse&quot;:&quot;Report abuse&quot;,&quot;search&quot;:&quot;Search&quot;,&quot;success_settings&quot;:&quot;Successfully updated settings.&quot;}}}"></div>
+  
+  
+</body></html>

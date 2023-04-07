@@ -1,0 +1,6 @@
+/**
+ * ESP - RTBHouse
+ * @version v1.1.0
+ * @link https://www.rtbhouse.com/
+ */
+!function(){async function e(){let e=window.localStorage.getItem("rtbhouse-esp");return e||(e=(()=>{var e=(e,t)=>e.toString(16).padStart(t,0);const t=crypto.getRandomValues(new Uint8Array(16)),n=(t[6]=15&t[6]|64,t[8]=63&t[8]|128,new DataView(t.buffer));return`${e(n.getUint32(0),8)}-${e(n.getUint16(4),4)}-${e(n.getUint16(6),4)}-${e(n.getUint16(8),4)}-`+e(n.getUint32(10),8)+e(n.getUint16(14),4)})(),window.localStorage.setItem("rtbhouse-esp",e)),signal_decrypted={domain:encodeURIComponent(window.location.href),"rtbhouse-esp":e},document.referrer&&(signal_decrypted.referrer=encodeURIComponent(document.referrer)),async function(e){const t={publisher_id:"rtbhouse",signal:e},n=await fetch("https://esp.rtbhouse.com/encrypt",{method:"POST",body:JSON.stringify(t),headers:{"Content-Type":"application/json"}});return(await n.json()).message}(signal_decrypted).then(e=>e)}new class{constructor(e){Object.assign(this,e)}send_signal(){window.googletag.encryptedSignalProviders||(window.googletag.encryptedSignalProviders=[]),null!=googletag.encryptedSignalProviders&&googletag.encryptedSignalProviders.push({id:"rtbhouse",collectorFunction:e})}}({send_cookie:!0}).send_signal()}();

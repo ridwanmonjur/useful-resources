@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://cdpn.io/laurilllll/fullembedgrid/ExgJYRm?animations=run&type=embed -->
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+  <title>CodePen - Responsive Typography using the CSS clamp() function</title>
+  
+  
+  
+  
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+Pro&display=swap");
+h1,
+h2,
+p {
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
+
+h1 {
+  --min: 2em;
+  --val: 5vw;
+  --max: 3em;
+}
+
+h2 {
+  --min: 1.5em;
+  /* minimum value */
+  --val: 4vw;
+  /* preferred value = 4% viewport width */
+  --max: 2.25em;
+  /* maximum value */
+}
+
+p {
+  --min: 1em;
+  --val: 2.5vw;
+  --max: 1.5em;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1.5em;
+  max-width: 720px;
+  margin: auto;
+}
+body > * + * {
+  margin: 1em 0 0.25em;
+}
+
+h1,
+h2 {
+  font-family: "Merriweather", serif;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.text--grey {
+  color: #a6a6a6;
+}
+
+hr {
+  margin: 2em 0;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body translate="no">
+  <h1>Responsive typography:<br><span class="text--grey">clamp() function</span></h1>
+<p>
+  Vestibulum molestie sapien eget orci pellentesque, et aliquam lectus convallis. Phasellus neque velit, ultricies ut lacus at, finibus lobortis dui. Proin eget diam elit.
+</p>
+<h2>Three different methods explained</h2>
+<p>
+  Pellentesque sagittis nisl nec rhoncus porta. Quisque luctus turpis nec turpis consequat fermentum et vitae diam.
+</p>
+  
+  
+  
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+
+
+</body></html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)https://codepen.io/laurilllll/embed/ZEpZzPB?height=600&default-tab=css,result&embed-version=2 -->
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Responsive Typography using a CSS custom property as a multiplier</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="zFkWgQUZbS3JezZcMF7vO2Ge2BZMpkNtI259cm74urVoh3V1HbZr2v3NgRIDvTrj57mc7tndRHH4yQCaqQ3ftQ==">
+<link rel="stylesheet" media="all" href="./embed-0296f9781487e8ed6083285be4e1ac719972807e90baa390edad0a18b25f78d1.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #3d3d3e;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #3d3d3e;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #666666;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #888888;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #dddddd;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #ffffff;
+    }
+
+    .embed-nav svg {
+      stroke: #ffffff !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./twilight-b1245feb6421f4bced574a0dafb54ff98e3005abc90de9d5f167b307e5d0e9fd.css">
+</head>
+<body id="the-body" style="border: 1px solid #555555; --borderWidth: 1px;" class="codepen-embed-body split-output static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/laurilllll/embed/ZEpZzPB?height=600&amp;default-tab=css,result&amp;embed-version=2#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/laurilllll/embed/ZEpZzPB?height=600&amp;default-tab=css,result&amp;embed-version=2#css-box" role="button" class="active" aria-pressed="true">
+SCSS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/laurilllll/embed/ZEpZzPB?height=600&amp;default-tab=css,result&amp;embed-version=2#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/laurilllll/embed/ZEpZzPB?height=600&amp;default-tab=css,result&amp;embed-version=2#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/laurilllll/pen/ZEpZzPB" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>Responsive typography:<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"text--grey"</span><span class="cm-tag cm-bracket">&gt;</span>multiplier<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+  Vestibulum molestie sapien eget orci pellentesque, et aliquam lectus convallis. Phasellus neque velit, ultricies ut lacus at, finibus lobortis dui. Proin eget diam elit.
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>Three different methods explained<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+  Pellentesque sagittis nisl nec rhoncus porta. Quisque luctus turpis nec turpis consequat fermentum et vitae diam.
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box active" role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-comment">/* Declare a font size multiplier variable */</span>
+:<span class="cm-variable-3">root</span> {
+  <span class="cm-variable-2">--text-multiplier</span>: <span class="cm-number">1</span>;
+}
+
+<span class="cm-comment">/* Increase the size of the multiplier on bigger screens */</span>
+<span class="cm-def">@media</span> (<span class="cm-property">min-width</span>: <span class="cm-number">48rem</span>) {
+  :<span class="cm-variable-3">root</span> {
+    <span class="cm-variable-2">--text-multiplier</span>: <span class="cm-number">1.5</span>;
+  }
+}
+
+<span class="cm-comment">/* Declare text styles using calc() function and the multiplier */</span>
+<span class="cm-tag">h1</span> {
+  <span class="cm-property">font-size</span>: <span class="cm-variable cm-callee">calc</span>(<span class="cm-number">2em</span> * <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--text-multiplier</span>));
+}
+<span class="cm-tag">h2</span> {
+  <span class="cm-property">font-size</span>: <span class="cm-variable cm-callee">calc</span>(<span class="cm-number">1.5em</span> * <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--text-multiplier</span>));
+}
+<span class="cm-tag">p</span> {
+  <span class="cm-property">font-size</span>: <span class="cm-variable cm-callee">calc</span>(<span class="cm-number">1em</span> * <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--text-multiplier</span>));
+}
+
+<span class="cm-comment">//------------------------------//</span>
+<span class="cm-comment">// Base styles for demo purposes</span>
+<span class="cm-comment">//------------------------------//</span>
+<span class="cm-def">@import</span> <span class="cm-variable cm-callee">url</span>(<span class="cm-string">"https://fonts.googleapis.com/css2?family=Merriweather:wght@700&amp;family=Source+Sans+Pro&amp;display=swap"</span>);
+
+<span class="cm-tag">html</span>,
+<span class="cm-tag">body</span> {
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">0</span>;
+}
+
+<span class="cm-tag">body</span> {
+  <span class="cm-property">padding</span>: <span class="cm-number">1.5em</span>;
+  <span class="cm-property">max-width</span>: <span class="cm-number">720px</span>;
+  <span class="cm-property">margin</span>: <span class="cm-atom">auto</span>;
+
+  &amp; &gt; * + * {
+    <span class="cm-property">margin</span>: <span class="cm-number">1em</span> <span class="cm-number">0</span> <span class="cm-number">0.25em</span>;
+  }
+}
+
+<span class="cm-tag">h1</span>,
+<span class="cm-tag">h2</span> {
+  <span class="cm-property">font-family</span>: <span class="cm-string">"Merriweather"</span>, <span class="cm-atom">serif</span>;
+}
+
+<span class="cm-tag">p</span> {
+  <span class="cm-property">font-family</span>: <span class="cm-string">"Source Sans Pro"</span>, <span class="cm-atom">sans-serif</span>;
+}
+
+<span class="cm-qualifier">.text--grey</span> {
+  <span class="cm-property">color</span>: <span class="cm-variable cm-callee">hsl</span>(<span class="cm-number">0</span>, <span class="cm-number">0%</span>, <span class="cm-number">65%</span>);
+}
+
+<span class="cm-tag">hr</span> {
+  <span class="cm-property">margin</span>: <span class="cm-number">2em</span> <span class="cm-number">0</span>;
+}
+</code></pre>
+<a href="https://codepen.io/laurilllll/embed/ZEpZzPB?height=600&amp;default-tab=css,result&amp;embed-version=2#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Responsive Typography using a CSS custom property as a multiplier" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" scrolling="yes" title="CodePen Preview for Responsive Typography using a CSS custom property as a multiplier" data-src="https://cdpn.io/laurilllll/fullembedgrid/ZEpZzPB?animations=run&amp;type=embed" src="./ZEpZzPB.html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/laurilllll" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/laurilllll" target="_blank" rel="noopener">Lauri Lännenmäki</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/laurilllll" target="_blank" rel="noopener" class="about-user-more">
+See more by @laurilllll on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;h1&gt;Responsive typography:&lt;br&gt;&lt;span class=&quot;text--grey&quot;&gt;multiplier&lt;/span&gt;&lt;/h1&gt;\n&lt;p&gt;\n  Vestibulum molestie sapien eget orci pellentesque, et aliquam lectus convallis. Phasellus neque velit, ultricies ut lacus at, finibus lobortis dui. Proin eget diam elit.\n&lt;/p&gt;\n&lt;h2&gt;Three different methods explained&lt;/h2&gt;\n&lt;p&gt;\n  Pellentesque sagittis nisl nec rhoncus porta. Quisque luctus turpis nec turpis consequat fermentum et vitae diam.\n&lt;/p&gt;","css":"/* Declare a font size multiplier variable */\n@import url(&quot;https://fonts.googleapis.com/css2?family=Merriweather:wght@700&amp;family=Source+Sans+Pro&amp;display=swap&quot;);\n:root {\n  --text-multiplier: 1;\n}\n\n/* Increase the size of the multiplier on bigger screens */\n@media (min-width: 48rem) {\n  :root {\n    --text-multiplier: 1.5;\n  }\n}\n/* Declare text styles using calc() function and the multiplier */\nh1 {\n  font-size: calc(2em * var(--text-multiplier));\n}\n\nh2 {\n  font-size: calc(1.5em * var(--text-multiplier));\n}\n\np {\n  font-size: calc(1em * var(--text-multiplier));\n}\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  padding: 1.5em;\n  max-width: 720px;\n  margin: auto;\n}\nbody &gt; * + * {\n  margin: 1em 0 0.25em;\n}\n\nh1,\nh2 {\n  font-family: &quot;Merriweather&quot;, serif;\n}\n\np {\n  font-family: &quot;Source Sans Pro&quot;, sans-serif;\n}\n\n.text--grey {\n  color: #a6a6a6;\n}\n\nhr {\n  margin: 2em 0;\n}","js":""};
+    __preprocessors = {
+      "html": "none",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-008e8e63bc8f4f7a03df3f5da5b5c4d5e25fe5a438f147d0a2325f15fcd47555.js"></script>
+<script nonce="">(function(){var js = "window['__CF$cv$params']={r:'7af9bf60e91d336c',m:'4.hg6zH_G4cMPraCJDrklVUdPaJ_YmH8TqPFCnWXPl0-1680110049-0-Afbks1jHRSIUWvGgk5OmqKzEt3JnPiLn1ujwIqGpsxO55FR9g//6JikBM/Rg9CUItiqJndtU8kaBrGspsHog+awFbXykucECO1AJ+op21gD0dYOpCQuJYbRAxu9LEUEgUkzdJ1JaNr7/M4WGjpmtNIbqYKnLu2PdmcT9WP1SeUK+R6yCziMXIzHCpFVROw7N5ox9khGdpUbY5eEGxkOgAks=',s:[0xe876e4eeb4,0xc3a2855f95],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='JGwFSETXu4g=',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'JGwFSETXu4g=';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(1).html"></iframe>
+
+</body></html>
