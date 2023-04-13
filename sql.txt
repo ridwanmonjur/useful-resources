@@ -1,0 +1,7 @@
+sql book
+mongodb
+orm project (prisma and hibernate)
+https://www.prisma.io/docs/concepts/overview/prisma-in-your-stack/fullstack#ready-to-run-fullstack-example-projects
+
+
+

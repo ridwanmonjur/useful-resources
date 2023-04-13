@@ -6,6 +6,9 @@ learn
 5. images
 6. rwd
 
+pseudoelements
+https://css-tricks.com/7-practical-uses-for-the-before-and-after-pseudo-elements-in-css/
+
 math functions=>
 https://www.makeuseof.com/css-math-functions-responsive-web-design/
 

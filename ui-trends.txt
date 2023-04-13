@@ -1,0 +1,8 @@
+1. gradients
+2. position absoolute elements
+3. background images
+4. scroll animations
+5. card backgrounds
+6. typewriter effect
+7. hover effect
+
